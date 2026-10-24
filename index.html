@@ -1,11 +1,108 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; font-src 'self'; img-src 'self' data:; connect-src 'self' https://openrouter.ai; frame-src 'none'; form-action 'none'; base-uri 'self'; object-src 'none'">
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>maker.curiosta.com</title>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Maker by Curiosta</title>
+<meta name="description" content="Draft, unofficial maker project ideas with pre-selected parts lists for students of Fab Academy-style topics. Not affiliated with Fab Academy.">
+<link rel="canonical" href="https://maker.curiosta.com/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Maker by Curiosta">
+<meta property="og:title" content="Maker by Curiosta">
+<meta property="og:description" content="Draft, unofficial maker project ideas with pre-selected parts lists for students of Fab Academy-style topics. Not affiliated with Fab Academy.">
+<meta property="og:url" content="https://maker.curiosta.com/">
+<meta name="twitter:card" content="summary">
+<meta name="theme-color" content="#041726">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="assets/style.css">
 </head>
 <body>
-<p>Coming soon.</p>
+<a class="skip" href="#main">Skip to content</a>
+<header class="topbar site-header"><div class="wrap">
+<a class="brand" href=""><b>Maker</b><span>by Curiosta</span></a>
+<nav aria-label="Main"><ul class="nav"><li><a aria-current="page" href="">Home</a></li><li><a href="curriculum/">Curriculum</a></li><li><a href="projects/">Projects</a></li><li><a href="parts/">Parts</a></li><li><a href="ask/">Ask</a></li><li><a href="parts/#how-to-buy">How to buy</a></li></ul></nav>
+</div></header>
+<main id="main">
+<section class="hero"><div class="wrap">
+<p class="eyebrow">Maker by Curiosta · first draft</p>
+<h1>Maker projects with the parts already picked.</h1>
+<p class="lead">Project ideas for students working through Fab Academy-style topics such as electronics, embedded programming, laser cutting, milling and casting. Each one comes with a parts list, so you can see what a build needs before you start.</p>
+<div class="btn-row"><a class="btn btn-primary" href="projects/">Browse 5 projects</a><a class="btn btn-ghost" href="curriculum/">Curriculum</a><a class="btn btn-ghost" href="parts/">Parts catalogue</a></div>
+</div></section>
+<section class="block"><div class="wrap narrow">
+<div class="callout warn"><h2>Draft, and unofficial</h2>
+<p>This is an early draft. It is <strong>not affiliated with, endorsed by or part of Fab Academy</strong> or the Fab Foundation, and it is not a Fab Academy curriculum. Project details, prices and GST rates can be wrong or out of date. Check them before you buy.</p></div>
+<h2>What is here</h2>
+<ul class="clean">
+<li><strong>Projects.</strong> 5 ideas from beginner to advanced, each with what it teaches, a build time, safety notes and a priced parts list.</li>
+<li><strong>Parts catalogue.</strong> 38 priced parts used by the projects, with the seller's price, a source link and the date it was read. Parts shared between projects are marked. There are also 26 draft parts whose prices have not been researched yet; they are listed separately and are in no project or total.</li>
+<li><strong>Curriculum.</strong> An unofficial companion to the Fab Academy curriculum: what each module's official assignment asks for, and what bare-minimum and exceptional work could look like. <a href="curriculum/">Open the curriculum</a>.</li>
+<li><strong>Ask.</strong> An optional tutor that runs in your browser with your own OpenRouter account. <a href="ask/">About the tutor</a>.</li>
+<li><strong>Buying.</strong> There is no online checkout. <a href="parts/#how-to-buy">Email info@curiosta.com</a> to buy or import parts.</li>
+</ul>
+<h2>How we show prices</h2>
+<ul class="clean">
+<li>Prices are what a seller listed, including GST, on the date shown next to each part. They are not a Curiosta quote.</li>
+<li>No listing states a GST rate. Every part is marked <span class="flag">GST unverified, typically 18%</span>. Confirm the rate on a seller invoice.</li>
+<li>Where we have not found a price, the page says <span class="flag na">price not available</span>. We do not guess.</li>
+<li>Shipping is not included. Stock and prices change.</li>
+</ul>
+</div></section>
+<section class="block alt"><div class="wrap">
+<div class="section-head"><p class="eyebrow">Projects</p><h2>Start with one of these</h2></div>
+<div class="grid"><article class="card">
+<ul class="chips"><li class="chip beginner">beginner</li><li class="chip">4-6 hours</li></ul>
+<h3><a href="projects/esp32-climate-node/">ESP32 Climate Node with OLED and MQTT Dashboard</a></h3>
+<p class="grow">Read digital (DHT22) and I2C (BMP280) sensors, share one I2C bus with an OLED (addressing 0x76 / 0x3C), then publish readings over Wi-Fi via MQTT to a live web dashboard. Good first project for input devices + networking weeks.</p>
+<ul class="chips"><li class="chip topic">Input devices</li><li class="chip topic">Networking and communications</li><li class="chip topic">Embedded programming</li><li class="chip topic">+2 more</li></ul>
+<p class="price">₹811<small>required parts, GST-inclusive as listed on 24 Oct 2026; GST rate unverified. Shipping not included.</small></p>
+<a class="more" href="projects/esp32-climate-node/">See the parts list<span class="sr-only"> for ESP32 Climate Node with OLED and MQTT Dashboard</span> &rarr;</a>
+</article><article class="card">
+<ul class="chips"><li class="chip beginner">beginner</li><li class="chip">4-6 hours</li></ul>
+<h3><a href="projects/ultrasonic-radar-scanner/">Ultrasonic Radar Scanner (RP2040 + Servo + OLED)</a></h3>
+<p class="grow">Timing-based distance sensing, driving a servo with PWM, level-shifting a 5V echo line to a 3.3V MCU with a resistor divider, and drawing a polar sweep on an OLED. Pairs a laser-cut pan bracket with MicroPython on RP2040.</p>
+<ul class="chips"><li class="chip topic">Input devices</li><li class="chip topic">Output devices</li><li class="chip topic">Embedded programming</li><li class="chip topic">+2 more</li></ul>
+<p class="price">₹987<small>required parts, GST-inclusive as listed on 24 Oct 2026; GST rate unverified. Shipping not included.</small></p>
+<a class="more" href="projects/ultrasonic-radar-scanner/">See the parts list<span class="sr-only"> for Ultrasonic Radar Scanner (RP2040 + Servo + OLED)</span> &rarr;</a>
+</article><article class="card">
+<ul class="chips"><li class="chip intermediate">intermediate</li><li class="chip">8-12 hours</li></ul>
+<h3><a href="projects/wifi-obstacle-rover/">Wi-Fi Obstacle-Avoiding Mini Rover (Laser-Cut Chassis)</a></h3>
+<p class="grow">Design a parametric laser-cut chassis around N20 motors, drive them with a DRV8833 H-bridge using PWM, add an ultrasonic scan head, handle a 2S battery with a 5V buck converter, and add a Wi-Fi web UI for manual/auto modes.</p>
+<ul class="chips"><li class="chip topic">Mechanical design</li><li class="chip topic">Computer-controlled cutting</li><li class="chip topic">Output devices</li><li class="chip topic">+4 more</li></ul>
+<p class="price">₹1,848<small>required parts, GST-inclusive as listed on 24 Oct 2026; GST rate unverified. Shipping not included.</small></p>
+<a class="more" href="projects/wifi-obstacle-rover/">See the parts list<span class="sr-only"> for Wi-Fi Obstacle-Avoiding Mini Rover (Laser-Cut Chassis)</span> &rarr;</a>
+</article><article class="card">
+<ul class="chips"><li class="chip intermediate">intermediate</li><li class="chip">8-10 hours</li></ul>
+<h3><a href="projects/milled-xiao-rp2040-reaction-game/">Milled Pocket Reaction Game Board (XIAO RP2040)</a></h3>
+<p class="grow">Full board loop: schematic and layout in KiCad (single-sided, jumper-friendly), mill on a desktop CNC/PCB mill, solder through-hole parts, then program a game with buttons, WS2812 LEDs, buzzer and OLED score display. Covers DRC, tool-path generation, and debugging a fresh board.</p>
+<ul class="chips"><li class="chip topic">Electronics design</li><li class="chip topic">Electronics production</li><li class="chip topic">Embedded programming</li><li class="chip topic">+2 more</li></ul>
+<p class="price">₹837<small>required parts, GST-inclusive as listed on 24 Oct 2026; GST rate unverified. Shipping not included.</small></p>
+<a class="more" href="projects/milled-xiao-rp2040-reaction-game/">See the parts list<span class="sr-only"> for Milled Pocket Reaction Game Board (XIAO RP2040)</span> &rarr;</a>
+</article><article class="card">
+<ul class="chips"><li class="chip advanced">advanced</li><li class="chip">12-16 hours over 2-3 days (cure times)</li></ul>
+<h3><a href="projects/cast-epoxy-glow-lamp/">Cast Epoxy Glow Lamp (3D-Printed Master, Silicone Mould, Wi-Fi LEDs)</a></h3>
+<p class="grow">Design a diffuser dome with a cavity for the electronics, print the master, make a two-part silicone mould (parting line, pour/vent design, release), cast in clear epoxy, finish (sand to frost), then drive a WS2812 ring from XIAO ESP32-C3 with a Wi-Fi colour picker page.</p>
+<ul class="chips"><li class="chip topic">3D scanning and printing</li><li class="chip topic">Molding and casting</li><li class="chip topic">Output devices</li><li class="chip topic">+3 more</li></ul>
+<p class="price">₹3,569.35<small>required parts, GST-inclusive as listed on 24 Oct 2026; GST rate unverified. Shipping not included.</small></p>
+<a class="more" href="projects/cast-epoxy-glow-lamp/">See the parts list<span class="sr-only"> for Cast Epoxy Glow Lamp (3D-Printed Master, Silicone Mould, Wi-Fi LEDs)</span> &rarr;</a>
+</article></div>
+</div></section>
+</main>
+<footer class="site-footer"><div class="wrap">
+<div class="cols">
+<div><h2>Maker by Curiosta</h2>
+<p>Maker project ideas with pre-selected parts lists, plus an unofficial Fab Academy companion. First draft.</p>
+<p><strong>Unofficial.</strong> maker.curiosta.com is an independent companion for Fab Academy students. It is not affiliated with, endorsed by or part of Fab Academy or the Fab Foundation. The official course is at <a href="https://fabacademy.org/">fabacademy.org</a>, and it is the authority on requirements, deadlines and grading.</p></div>
+<div><h2>Explore</h2><ul>
+<li><a href="curriculum/">Curriculum</a></li><li><a href="projects/">Projects</a></li>
+<li><a href="parts/">Parts catalogue</a></li><li><a href="ask/">Ask</a></li></ul></div>
+<div><h2>Buy parts</h2><ul>
+<li><a href="parts/#how-to-buy">How to buy</a></li>
+<li><a href="mailto:info@curiosta.com">info@curiosta.com</a></li></ul></div>
+</div>
+<p class="fine">Draft content. Prices are third-party listings read on the date shown and are not a Curiosta quote; GST rates are unverified. No online checkout, no analytics, no trackers.</p>
+</div></footer>
+<script src="assets/chat/chat-loader.js" defer></script>
 </body>
 </html>

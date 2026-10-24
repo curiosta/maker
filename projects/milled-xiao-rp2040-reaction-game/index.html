@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; font-src 'self'; img-src 'self' data:; connect-src 'self' https://openrouter.ai; frame-src 'none'; form-action 'none'; base-uri 'self'; object-src 'none'">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Milled Pocket Reaction Game Board (XIAO RP2040) | Maker by Curiosta</title>
+<meta name="description" content="A custom carrier PCB you design and mill: XIAO RP2040 socketed in female headers, 4 arcade-style tactile buttons, an 8-LED WS2812 bar, passive buzzer and OLED. Light a random LED, press the matching button fast - high score on screen. Difficulty: intermediate. Build time: 8-10 hours. Required parts ">
+<link rel="canonical" href="https://maker.curiosta.com/projects/milled-xiao-rp2040-reaction-game/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Maker by Curiosta">
+<meta property="og:title" content="Milled Pocket Reaction Game Board (XIAO RP2040) | Maker by Curiosta">
+<meta property="og:description" content="A custom carrier PCB you design and mill: XIAO RP2040 socketed in female headers, 4 arcade-style tactile buttons, an 8-LED WS2812 bar, passive buzzer and OLED. Light a random LED, press the matching button fast - high score on screen. Difficulty: intermediate. Build time: 8-10 hours. Required parts ">
+<meta property="og:url" content="https://maker.curiosta.com/projects/milled-xiao-rp2040-reaction-game/">
+<meta name="twitter:card" content="summary">
+<meta name="theme-color" content="#041726">
+<link rel="icon" href="../../assets/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="../../assets/style.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="topbar site-header"><div class="wrap">
+<a class="brand" href="../../"><b>Maker</b><span>by Curiosta</span></a>
+<nav aria-label="Main"><ul class="nav"><li><a href="../../">Home</a></li><li><a href="../../curriculum/">Curriculum</a></li><li><a aria-current="page" href="../../projects/">Projects</a></li><li><a href="../../parts/">Parts</a></li><li><a href="../../ask/">Ask</a></li><li><a href="../../parts/#how-to-buy">How to buy</a></li></ul></nav>
+</div></header>
+<main id="main">
+<section class="hero compact"><div class="wrap">
+<nav class="crumbs" aria-label="Breadcrumb"><ol><li><a href="../../">Home</a></li><li><a href="../">Projects</a></li><li><span aria-current="page">Milled Pocket Reaction Game Board (XIAO RP2040)</span></li></ol></nav>
+<p class="eyebrow">Project · draft</p>
+<h1>Milled Pocket Reaction Game Board (XIAO RP2040)</h1>
+<ul class="chips"><li class="chip intermediate">intermediate</li><li class="chip">8-10 hours</li></ul>
+</div></section>
+<section class="block"><div class="wrap narrow">
+<div class="callout warn"><p>Draft and unofficial, not affiliated with Fab Academy. Check prices, GST and parts before you buy.</p></div>
+<h2>Summary</h2><p>A custom carrier PCB you design and mill: XIAO RP2040 socketed in female headers, 4 arcade-style tactile buttons, an 8-LED WS2812 bar, passive buzzer and OLED. Light a random LED, press the matching button fast - high score on screen.</p>
+<h2>What it teaches</h2><p>Full board loop: schematic and layout in KiCad (single-sided, jumper-friendly), mill on a desktop CNC/PCB mill, solder through-hole parts, then program a game with buttons, WS2812 LEDs, buzzer and OLED score display. Covers DRC, tool-path generation, and debugging a fresh board.</p>
+<p class="muted" id="topics-label">Topics it touches, in Fab Academy-style terms:</p>
+<ul class="chips" aria-labelledby="topics-label"><li class="chip topic">Electronics design</li><li class="chip topic">Electronics production</li><li class="chip topic">Embedded programming</li><li class="chip topic">Input devices</li><li class="chip topic">Output devices</li></ul>
+<div class="callout safety"><h2>Safety notes</h2><p>No project-specific safety notes have been written for this draft yet. Soldering, laser cutting and milling each carry their own hazards, so follow your lab's safety rules and ask someone experienced if unsure.</p></div>
+</div></section>
+<section class="block alt"><div class="wrap">
+<h2>Parts list</h2>
+<div class="callout"><h2>Parts cost</h2>
+<p class="price">₹837<small>required parts, GST-inclusive as listed</small></p>
+<dl class="facts">
+<dt>Optional extras</dt><dd>₹65</dd>
+<dt>GST</dt><dd><span class="flag">GST unverified, typically 18%</span> If 18% applies, about ₹127.68 of the required total would be GST. This is an estimate, not a tax figure.</dd>
+<dt>Prices read</dt><dd>24 Oct 2026</dd>
+<dt>Not included</dt><dd>Shipping, tools, consumables, and anything marked price not available. Stock and prices change.</dd>
+</dl></div>
+<div class="tbl-wrap"><table class="tbl"><caption>Required parts</caption><thead><tr><th scope="col">Part</th><th scope="col" class="num">Qty</th><th scope="col">Unit</th><th scope="col" class="num">Price, GST-incl. as listed</th><th scope="col" class="num">Line total</th><th scope="col">GST</th><th scope="col">Source</th></tr></thead><tbody><tr><th scope="row" data-label="Part"><a href="../../parts/#xiao-rp2040">Seeed Studio XIAO RP2040 Development Board</a><span class="small mono">xiao-rp2040</span></th><td class="num" data-label="Qty">1</td><td data-label="Unit">pcs</td><td class="num" data-label="Price, GST-incl. as listed">₹513</td><td class="num" data-label="Line total">₹513</td><td data-label="GST"><span class="flag">GST unverified, typically 18%</span></td><td data-label="Source"><a href="https://robocraze.com/products/seeed-studio-xiao-rp2040-development-board" rel="noopener noreferrer">Robocraze</a><span class="small">read 24 Oct 2026</span></td></tr><tr><th scope="row" data-label="Part"><a href="../../parts/#pcb-copper-clad-15x10">15cm x 10cm Single Side Copper Clad Laminate PCB Board</a><span class="small mono">pcb-copper-clad-15x10</span><span class="small">Enough for 2-3 attempts if you size the board ~50x40 mm</span></th><td class="num" data-label="Qty">1</td><td data-label="Unit">sheet</td><td class="num" data-label="Price, GST-incl. as listed">₹39</td><td class="num" data-label="Line total">₹39</td><td data-label="GST"><span class="flag">GST unverified, typically 18%</span></td><td data-label="Source"><a href="https://robocraze.com/products/15cm-x-10cm-single-side-blank-pcb" rel="noopener noreferrer">Robocraze</a><span class="small">read 24 Oct 2026</span></td></tr><tr><th scope="row" data-label="Part"><a href="../../parts/#header-female-40x1">40x1 Female Berg Strip</a><span class="small mono">header-female-40x1</span><span class="small">Sockets for XIAO (2x7), OLED, buzzer, LED bar</span></th><td class="num" data-label="Qty">1</td><td data-label="Unit">pcs</td><td class="num" data-label="Price, GST-incl. as listed">₹12</td><td class="num" data-label="Line total">₹12</td><td data-label="GST"><span class="flag">GST unverified, typically 18%</span></td><td data-label="Source"><a href="https://robocraze.com/products/40x1-female-berg-strip" rel="noopener noreferrer">Robocraze</a><span class="small">read 24 Oct 2026</span></td></tr><tr><th scope="row" data-label="Part"><a href="../../parts/#header-male-40x1">40x1 Pin 2.54mm Pitch Male Berg Strip</a><span class="small mono">header-male-40x1</span></th><td class="num" data-label="Qty">1</td><td data-label="Unit">pcs</td><td class="num" data-label="Price, GST-incl. as listed">₹8</td><td class="num" data-label="Line total">₹8</td><td data-label="GST"><span class="flag">GST unverified, typically 18%</span></td><td data-label="Source"><a href="https://robocraze.com/products/40x1-pin-2-54mm-pitch-male-berg-strip" rel="noopener noreferrer">Robocraze</a><span class="small">read 24 Oct 2026</span></td></tr><tr><th scope="row" data-label="Part"><a href="../../parts/#button-tactile-6x6-x10">4-Pins DIP Momentary Square Tactile Push Button Switch 10 Pieces - 6x6x5mm</a><span class="small mono">button-tactile-6x6-x10</span><span class="small">Uses 4-5 buttons</span><span class="small">Pack: pack of 10</span></th><td class="num" data-label="Qty">1</td><td data-label="Unit">set</td><td class="num" data-label="Price, GST-incl. as listed">₹16</td><td class="num" data-label="Line total">₹16</td><td data-label="GST"><span class="flag">GST unverified, typically 18%</span></td><td data-label="Source"><a href="https://robocraze.com/products/4-pins-dip-momentary-square-tactile-push-button-switch-10-pieces-6x6x5mm" rel="noopener noreferrer">Robocraze</a><span class="small">read 24 Oct 2026</span></td></tr><tr><th scope="row" data-label="Part"><a href="../../parts/#buzzer-passive-module">Passive Buzzer Module 3.3V-5V DC</a><span class="small mono">buzzer-passive-module</span></th><td class="num" data-label="Qty">1</td><td data-label="Unit">pcs</td><td class="num" data-label="Price, GST-incl. as listed">₹35</td><td class="num" data-label="Line total">₹35</td><td data-label="GST"><span class="flag">GST unverified, typically 18%</span></td><td data-label="Source"><a href="https://robocraze.com/products/passive-buzzer-module" rel="noopener noreferrer">Robocraze</a><span class="small">read 24 Oct 2026</span></td></tr><tr><th scope="row" data-label="Part"><a href="../../parts/#led-ws2812-8bar">WS2812 8 Bit RGB LED (straight)</a><span class="small mono">led-ws2812-8bar</span></th><td class="num" data-label="Qty">1</td><td data-label="Unit">pcs</td><td class="num" data-label="Price, GST-incl. as listed">₹30</td><td class="num" data-label="Line total">₹30</td><td data-label="GST"><span class="flag">GST unverified, typically 18%</span></td><td data-label="Source"><a href="https://robocraze.com/products/ws2812-8-bit-rgb-led-straight" rel="noopener noreferrer">Robocraze</a><span class="small">read 24 Oct 2026</span></td></tr><tr><th scope="row" data-label="Part"><a href="../../parts/#oled-096-i2c">0.96 Inch OLED Display Module SPI/I2C 4pin Blue Color</a><span class="small mono">oled-096-i2c</span></th><td class="num" data-label="Qty">1</td><td data-label="Unit">pcs</td><td class="num" data-label="Price, GST-incl. as listed">₹167</td><td class="num" data-label="Line total">₹167</td><td data-label="GST"><span class="flag">GST unverified, typically 18%</span></td><td data-label="Source"><a href="https://robocraze.com/products/0-96in-oled-display-module-4pin" rel="noopener noreferrer">Robocraze</a><span class="small">read 24 Oct 2026</span></td></tr><tr><th scope="row" data-label="Part"><a href="../../parts/#cap-100nf-x10">0.1 uF 50V Ceramic Capacitor (Pack of 10)</a><span class="small mono">cap-100nf-x10</span><span class="small">Decoupling near LED bar</span><span class="small">Pack: pack of 10</span></th><td class="num" data-label="Qty">1</td><td data-label="Unit">set</td><td class="num" data-label="Price, GST-incl. as listed">₹17</td><td class="num" data-label="Line total">₹17</td><td data-label="GST"><span class="flag">GST unverified, typically 18%</span></td><td data-label="Source"><a href="https://robocraze.com/products/0-1-uf-50v-ceramic-capacitor" rel="noopener noreferrer">Robocraze</a><span class="small">read 24 Oct 2026</span></td></tr></tbody><tfoot><tr><th scope="row" colspan="4">Required total, GST-inclusive as listed</th><td class="num" data-label="Required total">₹837</td><td colspan="2"></td></tr></tfoot></table></div>
+<div class="tbl-wrap"><table class="tbl"><caption>Optional extras (not in the required total)</caption><thead><tr><th scope="col">Part</th><th scope="col" class="num">Qty</th><th scope="col">Unit</th><th scope="col" class="num">Price, GST-incl. as listed</th><th scope="col" class="num">Line total</th><th scope="col">GST</th><th scope="col">Source</th></tr></thead><tbody><tr><th scope="row" data-label="Part"><a href="../../parts/#cable-usb-c-1m">Type C USB Cable (1 metre)</a><span class="small mono">cable-usb-c-1m</span><span class="small">Skip if you already have one</span></th><td class="num" data-label="Qty">1</td><td data-label="Unit">pcs</td><td class="num" data-label="Price, GST-incl. as listed">₹65</td><td class="num" data-label="Line total">₹65</td><td data-label="GST"><span class="flag">GST unverified, typically 18%</span></td><td data-label="Source"><a href="https://robocraze.com/products/type-c-usb-cable-1-metre" rel="noopener noreferrer">Robocraze</a><span class="small">read 24 Oct 2026</span></td></tr></tbody><tfoot><tr><th scope="row" colspan="4">Optional total, GST-inclusive as listed</th><td class="num" data-label="Optional total">₹65</td><td colspan="2"></td></tr></tfoot></table></div>
+<p class="muted">The Part column links to the shared catalogue. Units are pcs, m, g, sheet or set, and a "set" is the seller's pack, as noted per part.</p>
+</div></section>
+<section class="block"><div class="wrap narrow">
+<h2>Tools you will need</h2><ul class="clean"><li>KiCad (free)</li><li>PCB mill (e.g. Roland SRM-20 / Carvera / Fab Lab mill) with 1/64&quot; end mill and V-bit</li><li>Soldering iron</li><li>Laptop with MicroPython/Arduino-Pico</li></ul>
+
+<h2>Build notes</h2>
+<p>Step-by-step build notes have not been written yet for this draft. The summary, the topics above and the parts list are what exists so far.</p>
+<div class="callout">
+<h2>How to buy</h2>
+<p>There is no online checkout. To buy or import these parts, email <a href="mailto:info@curiosta.com?subject=Parts%20enquiry%3A%20Milled%20Pocket%20Reaction%20Game%20Board%20%28XIAO%20RP2040%29&amp;body=Hi%2C%20I%20would%20like%20to%20buy%20or%20import%20parts%20for%20this%20Maker%20by%20Curiosta%20project%3A%0AMilled%20Pocket%20Reaction%20Game%20Board%20%28XIAO%20RP2040%29%0A%0AParts%3A%0A-%20xiao-rp2040%20x%201%20pcs%0A-%20pcb-copper-clad-15x10%20x%201%20sheet%0A-%20header-female-40x1%20x%201%20pcs%0A-%20header-male-40x1%20x%201%20pcs%0A-%20button-tactile-6x6-x10%20x%201%20set%0A-%20buzzer-passive-module%20x%201%20pcs%0A-%20led-ws2812-8bar%20x%201%20pcs%0A-%20oled-096-i2c%20x%201%20pcs%0A-%20cap-100nf-x10%20x%201%20set%0A-%20cable-usb-c-1m%20x%201%20pcs%20%28optional%29%0A%0AQuantity%20of%20kits%3A%201%0ADelivery%20city%20%2F%20PIN%3A%20%0A">info@curiosta.com</a> and say what you need. The button opens your own email app with a draft; nothing is sent until you send it.</p>
+<p class="muted">Prices on this site are third-party seller listings, not a Curiosta quote. Ask by email for availability, price and GST.</p>
+<p><a class="btn btn-primary" href="mailto:info@curiosta.com?subject=Parts%20enquiry%3A%20Milled%20Pocket%20Reaction%20Game%20Board%20%28XIAO%20RP2040%29&amp;body=Hi%2C%20I%20would%20like%20to%20buy%20or%20import%20parts%20for%20this%20Maker%20by%20Curiosta%20project%3A%0AMilled%20Pocket%20Reaction%20Game%20Board%20%28XIAO%20RP2040%29%0A%0AParts%3A%0A-%20xiao-rp2040%20x%201%20pcs%0A-%20pcb-copper-clad-15x10%20x%201%20sheet%0A-%20header-female-40x1%20x%201%20pcs%0A-%20header-male-40x1%20x%201%20pcs%0A-%20button-tactile-6x6-x10%20x%201%20set%0A-%20buzzer-passive-module%20x%201%20pcs%0A-%20led-ws2812-8bar%20x%201%20pcs%0A-%20oled-096-i2c%20x%201%20pcs%0A-%20cap-100nf-x10%20x%201%20set%0A-%20cable-usb-c-1m%20x%201%20pcs%20%28optional%29%0A%0AQuantity%20of%20kits%3A%201%0ADelivery%20city%20%2F%20PIN%3A%20%0A">Email info@curiosta.com</a></p>
+</div>
+<nav class="pager" aria-label="Other projects"><a href="../wifi-obstacle-rover/">&larr; Wi-Fi Obstacle-Avoiding Mini Rover (Laser-Cut Chassis)</a><a href="../cast-epoxy-glow-lamp/">Cast Epoxy Glow Lamp (3D-Printed Master, Silicone Mould, Wi-Fi LEDs) &rarr;</a></nav>
+</div></section>
+</main>
+<footer class="site-footer"><div class="wrap">
+<div class="cols">
+<div><h2>Maker by Curiosta</h2>
+<p>Maker project ideas with pre-selected parts lists, plus an unofficial Fab Academy companion. First draft.</p>
+<p><strong>Unofficial.</strong> maker.curiosta.com is an independent companion for Fab Academy students. It is not affiliated with, endorsed by or part of Fab Academy or the Fab Foundation. The official course is at <a href="https://fabacademy.org/">fabacademy.org</a>, and it is the authority on requirements, deadlines and grading.</p></div>
+<div><h2>Explore</h2><ul>
+<li><a href="../../curriculum/">Curriculum</a></li><li><a href="../../projects/">Projects</a></li>
+<li><a href="../../parts/">Parts catalogue</a></li><li><a href="../../ask/">Ask</a></li></ul></div>
+<div><h2>Buy parts</h2><ul>
+<li><a href="../../parts/#how-to-buy">How to buy</a></li>
+<li><a href="mailto:info@curiosta.com">info@curiosta.com</a></li></ul></div>
+</div>
+<p class="fine">Draft content. Prices are third-party listings read on the date shown and are not a Curiosta quote; GST rates are unverified. No online checkout, no analytics, no trackers.</p>
+</div></footer>
+<script src="../../assets/chat/chat-loader.js" defer></script>
+</body>
+</html>

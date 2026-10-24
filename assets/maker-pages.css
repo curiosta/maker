@@ -1,0 +1,69 @@
+/* Styles for the /curriculum/ and /ask/ drop-in pages. Needs only the shared brand tokens and base classes from the
+   site stylesheet (see README-MERGE.md for the list). Contrast: AA on sand, white and sea-900. */
+.page-hero { background: radial-gradient(800px 340px at 90% -20%, rgba(17,181,164,.2), transparent 60%), var(--sea-900); color: #e8f1f6; padding: 52px 0 44px; }
+.page-hero h1 { color: #fff; font-size: clamp(2rem, 4.4vw, 3.3rem); max-width: 22ch; margin-bottom: .35em; }
+.page-hero .lead { max-width: 64ch; color: #d3e2eb; font-size: 1.1rem; margin: 0; }
+.page-hero .meta { margin: 1.1em 0 0; font: 500 .85rem/1.5 var(--mono); color: #b9ccd8; }
+.crumbs { font: 500 .85rem/1.4 var(--mono); margin: 0 0 18px; }
+.crumbs ol { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: 4px 8px; }
+.crumbs li + li::before { content: "/"; color: #9fb4c2; margin-right: 8px; }
+.crumbs a { color: #e8f1f6; }
+.crumbs a:hover { color: var(--teal); }
+.crumbs [aria-current] { color: #b9ccd8; }
+.mp-section { padding: 52px 0; }
+.mp-section + .mp-section { border-top: 1px solid var(--line); }
+.mp-section h2 { font-size: clamp(1.6rem, 3vw, 2.2rem); }
+.mp-section h3 { font-size: 1.3rem; margin-top: 1.6em; }
+.callout { background: var(--coral-soft); border: 1px solid #f3b9a9; border-left: 6px solid var(--coral); border-radius: 12px; padding: 16px 20px; margin: 0 0 28px; color: var(--ink); }
+.callout p:last-child { margin-bottom: 0; }
+.callout strong.label { font: 700 .78rem/1.3 var(--mono); text-transform: uppercase; letter-spacing: .12em; color: #8a2a14; display: block; margin-bottom: 6px; }
+.callout.info { background: var(--teal-soft); border-color: #9fdcd4; border-left-color: var(--teal); }
+.callout.info strong.label { color: #0a5f56; }
+.mod-grid { list-style: none; padding: 0; margin: 0; display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
+@media (max-width: 900px) { .mod-grid { grid-template-columns: repeat(2, 1fr); } }
+@media (max-width: 600px) { .mod-grid { grid-template-columns: 1fr; } }
+.mod-card { display: flex; flex-direction: column; gap: 6px; height: 100%; background: var(--card); border: 1px solid var(--line); border-radius: var(--radius); padding: 18px 20px; box-shadow: var(--shadow); text-decoration: none; color: var(--ink); transition: border-color .2s, box-shadow .2s; }
+.mod-card:hover { border-color: var(--teal); color: var(--ink); box-shadow: 0 2px 4px rgba(4,23,38,.08), 0 12px 28px rgba(4,23,38,.12); }
+.mod-num { font: 700 .8rem/1 var(--mono); letter-spacing: .12em; color: var(--sea-500); }
+.mod-title { font: 600 1.25rem/1.2 var(--serif); }
+.mod-date { font-size: .9rem; color: var(--ink-2); }
+.badge { align-self: flex-start; margin-top: auto; font: 700 .72rem/1 var(--mono); letter-spacing: .08em; text-transform: uppercase; border-radius: 999px; padding: 6px 10px; }
+.badge.worked { background: var(--teal-soft); color: #0a5f56; }
+.badge.tbc { background: #ece8dd; color: #4a3f23; }
+.steps { counter-reset: s; list-style: none; padding: 0; margin: 0; display: grid; gap: 14px; }
+.steps li { counter-increment: s; background: var(--card); border: 1px solid var(--line); border-radius: var(--radius); padding: 18px 20px 16px 64px; position: relative; }
+.steps li::before { content: counter(s); position: absolute; left: 18px; top: 16px; width: 32px; height: 32px; border-radius: 50%; background: var(--sea-700); color: #fff; font: 700 .95rem/32px var(--mono); text-align: center; }
+.steps h3 { margin: 0 0 .25em; font: 700 1.1rem/1.3 var(--sans); }
+.steps p { margin: 0; }
+.req { background: var(--card); border: 1px solid var(--line); border-radius: var(--radius); padding: 22px 24px; margin: 0 0 16px; }
+.req ul { margin: 0; padding-left: 1.2em; }
+.req li + li { margin-top: .5em; }
+.req h3 { margin: 0 0 .5em; font: 700 1.1rem/1.3 var(--sans); }
+.rubric { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin: 0 0 20px; }
+@media (max-width: 760px) { .rubric { grid-template-columns: 1fr; } }
+.rubric > div { background: var(--card); border: 1px solid var(--line); border-radius: var(--radius); padding: 22px 24px; border-top: 6px solid var(--teal); }
+.rubric > div.exc { border-top-color: var(--coral); }
+.rubric h3 { margin: 0 0 .6em; font: 700 1.15rem/1.3 var(--sans); }
+.rubric ul { margin: 0; padding-left: 1.2em; }
+.rubric li + li { margin-top: .6em; }
+.checklist { list-style: none; padding: 0; margin: 0; }
+.checklist li { position: relative; padding-left: 28px; margin-bottom: .6em; }
+.checklist li::before { content: ""; position: absolute; left: 2px; top: .38em; width: 14px; height: 14px; border: 2px solid var(--sea-500); border-radius: 4px; }
+.src-list { padding-left: 1.2em; }
+.src-list li + li { margin-top: .4em; }
+.fine { font-size: .92rem; color: var(--ink-2); }
+.prevnext { display: flex; gap: 16px; justify-content: space-between; flex-wrap: wrap; margin-top: 8px; }
+.prevnext a { display: block; flex: 1 1 240px; background: var(--card); border: 1px solid var(--line); border-radius: var(--radius); padding: 14px 18px; text-decoration: none; color: var(--ink); }
+.prevnext a:hover { border-color: var(--teal); }
+.prevnext .dir { display: block; font: 700 .75rem/1.2 var(--mono); letter-spacing: .12em; text-transform: uppercase; color: var(--sea-500); margin-bottom: 4px; }
+.prevnext .next { text-align: right; }
+.cta-row { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 18px; }
+.kv { display: grid; gap: 4px 20px; grid-template-columns: max-content 1fr; margin: 0; }
+.kv dt { font-weight: 700; }
+.kv dd { margin: 0; }
+@media (max-width: 600px) { .kv { grid-template-columns: 1fr; } .kv dd { margin-bottom: 10px; } }
+.table-scroll { overflow-x: auto; }
+.table-scroll table { border-collapse: collapse; width: 100%; min-width: 360px; }
+.table-scroll th, .table-scroll td { text-align: left; padding: 8px 12px; border-bottom: 1px solid var(--line); }
+.table-scroll th { font: 700 .8rem/1.3 var(--mono); text-transform: uppercase; letter-spacing: .08em; color: var(--sea-500); }
+.status { min-height: 1.5em; margin: 12px 0 0; font-weight: 600; color: var(--ink-2); }
