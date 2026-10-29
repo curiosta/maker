@@ -5,12 +5,12 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Module 7: Electronics design | Fab Academy companion | Maker by Curiosta</title>
-<meta name="description" content="Module 7, Electronics design: what the official Fab Academy assignment asks for and what bare-minimum versus exceptional work could look like. Unofficial companion.">
+<meta name="description" content="Module 7, Electronics design: the official Fab Academy assignment and how it is assessed, a documentation checklist, bare-minimum versus exceptional work, pitfalls and open tools. Unofficial companion.">
 <link rel="canonical" href="https://maker.curiosta.com/curriculum/electronics-design/">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Maker by Curiosta">
 <meta property="og:title" content="Module 7: Electronics design | Fab Academy companion | Maker by Curiosta">
-<meta property="og:description" content="Module 7, Electronics design: what the official Fab Academy assignment asks for and what bare-minimum versus exceptional work could look like. Unofficial companion.">
+<meta property="og:description" content="Module 7, Electronics design: the official Fab Academy assignment and how it is assessed, a documentation checklist, bare-minimum versus exceptional work, pitfalls and open tools. Unofficial companion.">
 <meta property="og:url" content="https://maker.curiosta.com/curriculum/electronics-design/">
 <meta name="twitter:card" content="summary">
 <meta name="theme-color" content="#041726">
@@ -22,7 +22,7 @@
 <a class="skip" href="#main">Skip to content</a>
 <header class="topbar site-header"><div class="wrap">
 <a class="brand" href="../../"><b>Maker</b><span>by Curiosta</span></a>
-<nav aria-label="Main"><ul class="nav"><li><a href="../../">Home</a></li><li><a aria-current="page" href="../../curriculum/">Curriculum</a></li><li><a href="../../projects/">Projects</a></li><li><a href="../../parts/">Parts</a></li><li><a href="../../ask/">Ask</a></li><li><a href="../../parts/#how-to-buy">How to buy</a></li></ul></nav>
+<nav aria-label="Main"><ul class="nav"><li><a href="../../">Home</a></li><li><a aria-current="page" href="../../curriculum/">Curriculum</a></li><li><a href="../../projects/">Projects</a></li><li><a href="../../goals/">Goals</a></li><li><a href="../../parts/">Parts</a></li><li><a href="../../ask/">Ask</a></li><li><a href="../../parts/#how-to-buy">How to buy</a></li></ul></nav>
 </div></header>
 <main id="main">
 
@@ -30,8 +30,9 @@
 <nav class="crumbs" aria-label="Breadcrumb"><ol><li><a href="../../">Home</a></li><li><a href="../">Curriculum</a></li><li><span aria-current="page">Module 7</span></li></ol></nav>
 <p class="eyebrow">Module 7 of 19</p>
 <h1>Module 7: Electronics design</h1>
-<p class="lead">What the official assignment asks for, and what bare-minimum and exceptional work could look like.</p>
+<p class="lead">What the official assignment asks for and how it is assessed, a documentation checklist, bare-minimum and exceptional work, pitfalls, open tools, and projects that practise it.</p>
 <p class="meta">2026 cohort lecture: 25 Feb 2026. Check the current schedule for your cohort.</p>
+<nav class="toc" aria-label="On this page"><ul><li><a href="#official">Assignment</a></li><li><a href="#assessed">Assessment</a></li><li><a href="#checklist">Checklist</a></li><li><a href="#rubric">Bare-minimum vs exceptional</a></li><li><a href="#pitfalls">Pitfalls</a></li><li><a href="#tools">Tools</a></li><li><a href="#projects">Projects</a></li><li><a href="#sources">Sources</a></li></ul></nav>
 </div></section>
 <section class="mp-section" id="official"><div class="wrap narrow">
 <div class="callout" role="note"><strong class="label">Unofficial</strong><p>Paraphrased from the Fab Academy 2026 class page, retrieved 24 Oct 2026. The official page is the authority and may have changed: <a href="https://fabacademy.org/2026/classes/electronics_design/index.html">read it on fabacademy.org</a>.</p></div>
@@ -41,6 +42,21 @@
 <div class="req"><h3>Group assignment</h3><ul><li>Use the test equipment in your lab to observe the operation of an embedded microcontroller.</li></ul></div>
 <div class="req"><h3>Individual assignment</h3><ul><li>Use an EDA tool to design an embedded microcontroller system using parts from the inventory, and check its design rules for fabrication.</li></ul></div>
 <div class="req"><h3>Extra credit (optional, as marked on the official page)</h3><ul><li>Simulate a circuit.</li><li>Try another design workflow.</li><li>Design a case.</li></ul></div>
+</div></section>
+<section class="mp-section" id="assessed"><div class="wrap narrow">
+<h2>How it is assessed</h2>
+
+<div class="callout info" role="note"><strong class="label">Paraphrased</strong><p>From the Fab Academy 2026 <a href="https://fabacademy.org/2026/nueval/electronics_design/">assessment page on fabacademy.org</a>, retrieved 29 Oct 2026. Your local and global instructors decide what passes.</p></div>
+<h3>Learning outcomes</h3>
+<ul><li>Select and use software for circuit board design.</li><li>Demonstrate workflows used in circuit board design.</li></ul>
+<h3>Clarified in the official FAQ</h3><ul><li>For the group work, the minimum is to demonstrate a logic analyzer; other test equipment is welcome.</li><li>Draw your board from scratch; modifying an existing EDA project does not count.</li><li>A hand drawing is allowed, but you still have to show the use of EDA software.</li><li>'Interact and communicate' means a development board with local input and/or output, able to talk to an external device.</li><li>If your EDA tool has no design rules check, you can generate toolpaths in mods and inspect the traces.</li></ul>
+<p class="fine">All modules also follow the <a href="https://fabacademy.org/2026/nueval/general_essentials/">general essentials</a> (original files in your archive, compressed media, acknowledgements, AI prompts documented) and the <a href="https://fabacademy.org/2026/nueval/commercial_board_policy/">commercial board policy</a>. <a href="../#essentials">Summary of both</a>.</p>
+</div></section>
+<section class="mp-section" id="checklist"><div class="wrap narrow">
+<h2>Documentation checklist</h2>
+
+<p class="fine">The official "have you answered these questions?" list for this module, paraphrased. Tick each one off in your documentation.</p>
+<ul class="checklist"><li>Linked to the group assignment page.</li><li>Documented what you learned in electronics design.</li><li>Checked your board can be fabricated.</li><li>Explained problems and how you fixed them.</li><li>Included the original design files (for example KiCad).</li><li>Included a hero shot.</li></ul>
 </div></section>
 <section class="mp-section" id="rubric"><div class="wrap narrow">
 <h2>Bare-minimum vs exceptional</h2>
@@ -52,9 +68,24 @@
 </div>
 <div class="cta-row"><a class="btn btn-primary" href="../../ask/">Ask the tutor about this module</a><a class="btn btn-ghost" href="../#coming-back">Coming back after a break?</a></div>
 </div></section>
+<section class="mp-section" id="pitfalls"><div class="wrap narrow">
+<h2>Common pitfalls</h2>
+<p class="fine">The author's notes, partly drawn from the official FAQ. Not official grading.</p>
+<ul><li>Starting from someone's existing board file.</li><li>Running the design rules check with default rules rather than your lab's process.</li><li>Forgetting a programming header, reset or power indication.</li><li>Choosing parts your lab does not stock. Check the inventory first.</li></ul>
+</div></section>
+<section class="mp-section" id="tools"><div class="wrap narrow">
+<h2>Open tools and references</h2>
+<ul class="tool-list"><li><a href="https://www.kicad.org/">KiCad</a><span>open EDA suite</span></li><li><a href="https://docs.kicad.org/">KiCad documentation</a><span>official manuals</span></li><li><a href="https://gitlab.fabcloud.org/pub/libraries/electronics">Fab electronics library for KiCad</a><span>footprints for common Fab Lab parts</span></li><li><a href="https://inventory.fabcloud.io/">Fab Inventory</a><span>the Fab Lab parts inventory</span></li><li><a href="https://modsproject.org/">mods</a><span>toolpaths, also a way to check traces</span></li><li><a href="https://sigrok.org/wiki/PulseView">PulseView (sigrok)</a><span>open logic analyzer software</span></li><li><a href="https://www.falstad.com/circuit/">Falstad circuit simulator</a><span>quick browser circuit simulation</span></li><li><a href="https://github.com/openscopeproject/InteractiveHtmlBom">Interactive HTML BOM</a><span>KiCad plugin for assembly</span></li><li><a href="https://github.com/bennymeg/Fabrication-Toolkit">Fabrication Toolkit</a><span>KiCad plugin for board-house files</span></li></ul>
+<p class="fine">Open or free-to-use tools and references picked by the author; links checked on 29 Oct 2026. Your lab may use others, and that is fine.</p>
+</div></section>
+<section class="mp-section" id="projects"><div class="wrap narrow">
+<h2>Projects on this site that practise this module</h2>
+<p>7 project ideas on this site list this module among the skills it teaches.</p>
+<ul class="proj-list"><li><a class="pt" href="../../projects/kitchen-garden-drip-controller/">Soil-Moisture Drip Irrigation Controller (Milled MOSFET Board)</a><span class="pm"><a href="../../goals/2/">SDG 2 · Zero Hunger</a> · intermediate</span></li><li><a class="pt" href="../../projects/milled-xiao-rp2040-reaction-game/">Milled Reaction-Time Trainer Board (XIAO RP2040)</a><span class="pm"><a href="../../goals/3/">SDG 3 · Good Health and Well-being</a> · intermediate</span></li><li><a class="pt" href="../../projects/ble-sos-pendant/">BLE SOS Pendant with Loud Alarm (3D-Printed, XIAO ESP32-C3)</a><span class="pm"><a href="../../goals/5/">SDG 5 · Gender Equality</a> · intermediate</span></li><li><a class="pt" href="../../projects/machine-utilisation-retrofit/">Clip-On Machine Utilisation Logger (Industry 4.0 Retrofit)</a><span class="pm"><a href="../../goals/9/">SDG 9 · Industry, Innovation and Infrastructure</a> · intermediate</span></li><li><a class="pt" href="../../projects/haptic-distance-wristband/">Haptic Distance Wristband (ToF Sensor, Vibration Feedback)</a><span class="pm"><a href="../../goals/10/">SDG 10 · Reduced Inequalities</a> · intermediate</span></li><li><a class="pt" href="../../projects/tamper-evident-class-vote-box/">Tamper-Evident Electronic Vote Box for Clubs and Classrooms</a><span class="pm"><a href="../../goals/16/">SDG 16 · Peace, Justice and Strong Institutions</a> · intermediate</span></li><li><a class="pt" href="../../projects/tamper-detecting-smart-seal/">Tamper-Detecting Smart Seal (ATtiny, Cast in Epoxy)</a><span class="pm"><a href="../../goals/16/">SDG 16 · Peace, Justice and Strong Institutions</a> · advanced</span></li></ul>
+</div></section>
 <section class="mp-section" id="sources"><div class="wrap narrow">
 <h2>Sources</h2>
-<ul class="src-list"><li><a href="https://fabacademy.org/2026/classes/electronics_design/index.html">Fab Academy 2026: electronics design</a></li><li><a href="https://fabacademy.org/2026/schedule.html">Fab Academy 2026 schedule</a></li></ul>
+<ul class="src-list"><li><a href="https://fabacademy.org/2026/classes/electronics_design/index.html">Fab Academy 2026: electronics design</a> (class page), retrieved 24 Oct 2026</li><li><a href="https://fabacademy.org/2026/nueval/electronics_design/">Fab Academy 2026 assessment guide: electronics design</a>, retrieved 29 Oct 2026</li><li><a href="https://fabacademy.org/2026/nueval/general_essentials/">Fab Academy 2026 assessment guide: general essentials</a>, retrieved 29 Oct 2026</li><li><a href="https://fabacademy.org/2026/schedule.html">Fab Academy 2026 schedule</a></li></ul>
 <nav class="prevnext" aria-label="Module navigation">
 <a href="../3d-scanning-printing/" rel="prev"><span class="dir">Previous</span>Module 6: 3D scanning and printing</a>
 <a class="next" href="../computer-controlled-machining/" rel="next"><span class="dir">Next</span>Module 8: Computer-controlled machining</a>
@@ -67,7 +98,7 @@
 <p>Maker project ideas with pre-selected parts lists, plus an unofficial Fab Academy companion. First draft.</p>
 <p><strong>Unofficial.</strong> maker.curiosta.com is an independent companion for Fab Academy students. It is not affiliated with, endorsed by or part of Fab Academy or the Fab Foundation. The official course is at <a href="https://fabacademy.org/">fabacademy.org</a>, and it is the authority on requirements, deadlines and grading.</p></div>
 <div><h2>Explore</h2><ul>
-<li><a href="../../curriculum/">Curriculum</a></li><li><a href="../../projects/">Projects</a></li>
+<li><a href="../../curriculum/">Curriculum</a></li><li><a href="../../projects/">Projects</a></li><li><a href="../../goals/">Goals</a></li>
 <li><a href="../../parts/">Parts catalogue</a></li><li><a href="../../ask/">Ask</a></li></ul></div>
 <div><h2>Buy parts</h2><ul>
 <li><a href="../../parts/#how-to-buy">How to buy</a></li>

@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; font-src 'self'; img-src 'self' data:; connect-src 'self' https://openrouter.ai; frame-src 'none'; form-action 'none'; base-uri 'self'; object-src 'none'">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Compost Health Probe (Temperature + Moisture, Low-Power) | Maker by Curiosta</title>
+<meta name="description" content="SDG 12 · Responsible Consumption and Production. Push the steel probe into the heap; every 15-30 minutes the node wakes, reads core temperature and moisture, sends them to a dashboard and sleeps. It tells you when to turn the pile or add water. Difficulty: beginner. Build time: 5-7 hours. Some parts">
+<link rel="canonical" href="https://maker.curiosta.com/projects/compost-health-probe/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Maker by Curiosta">
+<meta property="og:title" content="Compost Health Probe (Temperature + Moisture, Low-Power) | Maker by Curiosta">
+<meta property="og:description" content="SDG 12 · Responsible Consumption and Production. Push the steel probe into the heap; every 15-30 minutes the node wakes, reads core temperature and moisture, sends them to a dashboard and sleeps. It tells you when to turn the pile or add water. Difficulty: beginner. Build time: 5-7 hours. Some parts">
+<meta property="og:url" content="https://maker.curiosta.com/projects/compost-health-probe/">
+<meta name="twitter:card" content="summary">
+<meta name="theme-color" content="#041726">
+<link rel="icon" href="../../assets/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="../../assets/style.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="topbar site-header"><div class="wrap">
+<a class="brand" href="../../"><b>Maker</b><span>by Curiosta</span></a>
+<nav aria-label="Main"><ul class="nav"><li><a href="../../">Home</a></li><li><a href="../../curriculum/">Curriculum</a></li><li><a aria-current="page" href="../../projects/">Projects</a></li><li><a href="../../goals/">Goals</a></li><li><a href="../../parts/">Parts</a></li><li><a href="../../ask/">Ask</a></li><li><a href="../../parts/#how-to-buy">How to buy</a></li></ul></nav>
+</div></header>
+<main id="main">
+<section class="hero compact"><div class="wrap">
+<nav class="crumbs" aria-label="Breadcrumb"><ol><li><a href="../../">Home</a></li><li><a href="../">Projects</a></li><li><span aria-current="page">Compost Health Probe (Temperature + Moisture, Low-Power)</span></li></ol></nav>
+<p class="eyebrow">Project · draft</p>
+<h1>Compost Health Probe (Temperature + Moisture, Low-Power)</h1>
+<ul class="chips"><li class="chip beginner">beginner</li><li class="chip">5-7 hours</li></ul>
+</div></section>
+<section class="block"><div class="wrap narrow">
+<div class="callout sdg"><p class="sdg-label"><a href="../../goals/12/">SDG 12 · Responsible Consumption and Production</a></p>
+<p>Helps a home, school or campus compost kitchen waste well, reducing waste sent to landfill (target 12.5).</p></div>
+<div class="callout safety" id="safety"><h2>Safety notes</h2><ul class="clean"><li>LiPo: use a cell with a protection circuit, check polarity before connecting to the XIAO BAT pads, never puncture, crush or short it, and stop using a swollen cell. Keep the battery and board in a sealed housing outside the heap; only the probes go in.</li><li>Compost can carry pathogens: wear gloves and wash hands after handling.</li></ul></div>
+<div class="callout warn"><p>Draft and unofficial, not affiliated with Fab Academy or the United Nations. Check prices, GST and parts before you buy.</p></div>
+<h2>Summary</h2><p>Push the steel probe into the heap; every 15-30 minutes the node wakes, reads core temperature and moisture, sends them to a dashboard and sleeps. It tells you when to turn the pile or add water.</p>
+<h2>What it teaches</h2><p>Read a 1-Wire temperature probe and a capacitive moisture sensor, use deep sleep to run for weeks on a LiPo, report over Wi-Fi, and interpret the hot-composting temperature curve (warm-up, hot phase, cooling).</p>
+<p class="muted" id="topics-label">Topics it touches, in Fab Academy-style terms:</p>
+<ul class="chips" aria-labelledby="topics-label"><li class="chip topic">Input devices</li><li class="chip topic">Embedded programming</li><li class="chip topic">Networking and communications</li><li class="chip topic">3D scanning and printing</li></ul>
+</div></section>
+<section class="block alt"><div class="wrap">
+<h2>Parts list</h2>
+<div class="callout warn"><h2>Parts cost</h2>
+<p class="no-total">Some parts are not priced yet, so there's no total.</p>
+<p>4 required parts are marked <span class="flag na">not priced yet</span> below, and 1 optional. Where a price is known it is shown per part, GST-inclusive as the seller listed it on 24 Oct 2026, with the GST rate unverified. Shipping is not included.</p></div>
+<div class="tbl-wrap"><table class="tbl"><caption>Required parts</caption><thead><tr><th scope="col">Part</th><th scope="col" class="num">Qty</th><th scope="col">Unit</th><th scope="col" class="num">Price, GST-incl. as listed</th><th scope="col" class="num">Line cost</th><th scope="col">GST</th><th scope="col">Source</th></tr></thead><tbody><tr><th scope="row" data-label="Part"><a href="../../parts/#xiao-esp32c3">Seeed Studio XIAO ESP32C3 Wi-Fi &amp; BLE Development Board</a><span class="small mono">xiao-esp32c3</span></th><td class="num" data-label="Qty">1</td><td data-label="Unit">pcs</td><td class="num" data-label="Price, GST-incl. as listed">₹734</td><td class="num" data-label="Line cost">₹734</td><td data-label="GST"><span class="flag">GST unverified, typically 18%</span></td><td data-label="Source"><a href="https://robocraze.com/products/seeed-studio-xiao-esp32c3" rel="noopener noreferrer">Robocraze</a><span class="small">read 24 Oct 2026</span></td></tr><tr><th scope="row" data-label="Part"><a href="../../parts/#ds18b20-waterproof">DS18B20 waterproof temperature probe (1-Wire), ~1 m lead</a><span class="small mono">ds18b20-waterproof</span></th><td class="num" data-label="Qty">1</td><td data-label="Unit">pcs</td><td class="num" data-label="Price, GST-incl. as listed"><span class="flag na">not priced yet</span></td><td class="num" data-label="Line cost"><span class="flag na">not priced yet</span></td><td data-label="GST"><span class="flag">GST unverified</span></td><td data-label="Source"><span class="small">no seller yet</span></td></tr><tr><th scope="row" data-label="Part"><a href="../../parts/#resistor-4k7-x10">4.7 kOhm resistor, through-hole (pack of 10)</a><span class="small mono">resistor-4k7-x10</span><span class="small">1-Wire pull-up; uses 1</span></th><td class="num" data-label="Qty">1</td><td data-label="Unit">set</td><td class="num" data-label="Price, GST-incl. as listed"><span class="flag na">not priced yet</span></td><td class="num" data-label="Line cost"><span class="flag na">not priced yet</span></td><td data-label="GST"><span class="flag">GST unverified</span></td><td data-label="Source"><span class="small">no seller yet</span></td></tr><tr><th scope="row" data-label="Part"><a href="../../parts/#soil-moisture-capacitive">Capacitive soil moisture sensor (v1.2/v2 style)</a><span class="small mono">soil-moisture-capacitive</span><span class="small">Seal the exposed edge</span></th><td class="num" data-label="Qty">1</td><td data-label="Unit">pcs</td><td class="num" data-label="Price, GST-incl. as listed"><span class="flag na">not priced yet</span></td><td class="num" data-label="Line cost"><span class="flag na">not priced yet</span></td><td data-label="GST"><span class="flag">GST unverified</span></td><td data-label="Source"><span class="small">no seller yet</span></td></tr><tr><th scope="row" data-label="Part"><a href="../../parts/#lipo-3.7v-500mah-jst">LiPo cell 3.7 V ~500 mAh with protection circuit and JST lead</a><span class="small mono">lipo-3.7v-500mah-jst</span></th><td class="num" data-label="Qty">1</td><td data-label="Unit">pcs</td><td class="num" data-label="Price, GST-incl. as listed"><span class="flag na">not priced yet</span></td><td class="num" data-label="Line cost"><span class="flag na">not priced yet</span></td><td data-label="GST"><span class="flag">GST unverified</span></td><td data-label="Source"><span class="small">no seller yet</span></td></tr><tr><th scope="row" data-label="Part"><a href="../../parts/#header-male-40x1">40x1 Pin 2.54mm Pitch Male Berg Strip</a><span class="small mono">header-male-40x1</span></th><td class="num" data-label="Qty">1</td><td data-label="Unit">pcs</td><td class="num" data-label="Price, GST-incl. as listed">₹8</td><td class="num" data-label="Line cost">₹8</td><td data-label="GST"><span class="flag">GST unverified, typically 18%</span></td><td data-label="Source"><a href="https://robocraze.com/products/40x1-pin-2-54mm-pitch-male-berg-strip" rel="noopener noreferrer">Robocraze</a><span class="small">read 24 Oct 2026</span></td></tr><tr><th scope="row" data-label="Part"><a href="../../parts/#jumpers-f2m-20cm-20">Male to Female Jumper Wires (20cm) (20pcs)</a><span class="small mono">jumpers-f2m-20cm-20</span><span class="small">Pack: pack of 20 male-female 20cm</span></th><td class="num" data-label="Qty">1</td><td data-label="Unit">set</td><td class="num" data-label="Price, GST-incl. as listed">₹28</td><td class="num" data-label="Line cost">₹28</td><td data-label="GST"><span class="flag">GST unverified, typically 18%</span></td><td data-label="Source"><a href="https://robocraze.com/products/f2m-jumper-wires-20cm-20pcs" rel="noopener noreferrer">Robocraze</a><span class="small">read 24 Oct 2026</span></td></tr></tbody></table></div>
+<div class="tbl-wrap"><table class="tbl"><caption>Optional extras (not in any total)</caption><thead><tr><th scope="col">Part</th><th scope="col" class="num">Qty</th><th scope="col">Unit</th><th scope="col" class="num">Price, GST-incl. as listed</th><th scope="col" class="num">Line cost</th><th scope="col">GST</th><th scope="col">Source</th></tr></thead><tbody><tr><th scope="row" data-label="Part"><a href="../../parts/#cable-usb-c-1m">Type C USB Cable (1 metre)</a><span class="small mono">cable-usb-c-1m</span><span class="small">Skip if you already have a data-capable USB-C cable</span></th><td class="num" data-label="Qty">1</td><td data-label="Unit">pcs</td><td class="num" data-label="Price, GST-incl. as listed">₹65</td><td class="num" data-label="Line cost">₹65</td><td data-label="GST"><span class="flag">GST unverified, typically 18%</span></td><td data-label="Source"><a href="https://robocraze.com/products/type-c-usb-cable-1-metre" rel="noopener noreferrer">Robocraze</a><span class="small">read 24 Oct 2026</span></td></tr><tr><th scope="row" data-label="Part"><a href="../../parts/#filament-petg-1kg">PETG 3D printer filament, 1.75 mm, 1 kg</a><span class="small mono">filament-petg-1kg</span><span class="small">Outdoor housing; Fab Lab stock if available</span></th><td class="num" data-label="Qty">1</td><td data-label="Unit">pcs</td><td class="num" data-label="Price, GST-incl. as listed"><span class="flag na">not priced yet</span></td><td class="num" data-label="Line cost"><span class="flag na">not priced yet</span></td><td data-label="GST"><span class="flag">GST unverified</span></td><td data-label="Source"><span class="small">no seller yet</span></td></tr></tbody></table></div>
+<p class="muted">The Part column links to the shared catalogue. Units are pcs, m, g, sheet or set, and a "set" is the seller's pack, as noted per part.</p>
+</div></section>
+<section class="block"><div class="wrap narrow">
+<h2>Tools you will need</h2><ul class="clean"><li>3D printer (PETG preferred for outdoor housing)</li><li>Soldering iron</li><li>Laptop with Arduino IDE or MicroPython</li></ul>
+
+<h2>Build notes</h2>
+<p>Step-by-step build notes have not been written yet for this draft. The summary, the topics above and the parts list are what exists so far.</p>
+<div class="callout">
+<h2>How to buy</h2>
+<p>There is no online checkout. To buy or import these parts, email <a href="mailto:info@curiosta.com?subject=Parts%20enquiry%3A%20Compost%20Health%20Probe%20%28Temperature%20%2B%20Moisture%2C%20Low-Power%29&amp;body=Hi%2C%20I%20would%20like%20to%20buy%20or%20import%20parts%20for%20this%20Maker%20by%20Curiosta%20project%3A%0ACompost%20Health%20Probe%20%28Temperature%20%2B%20Moisture%2C%20Low-Power%29%0A%0AParts%3A%0A-%20xiao-esp32c3%20x%201%20pcs%0A-%20ds18b20-waterproof%20x%201%20pcs%0A-%20resistor-4k7-x10%20x%201%20set%0A-%20soil-moisture-capacitive%20x%201%20pcs%0A-%20lipo-3.7v-500mah-jst%20x%201%20pcs%0A-%20header-male-40x1%20x%201%20pcs%0A-%20jumpers-f2m-20cm-20%20x%201%20set%0A-%20cable-usb-c-1m%20x%201%20pcs%20%28optional%29%0A-%20filament-petg-1kg%20x%201%20pcs%20%28optional%29%0A%0AQuantity%20of%20kits%3A%201%0ADelivery%20city%20%2F%20PIN%3A%20%0A">info@curiosta.com</a> and say what you need. The button opens your own email app with a draft; nothing is sent until you send it.</p>
+<p class="muted">Prices on this site are third-party seller listings, not a Curiosta quote. Ask by email for availability, price and GST.</p>
+<p><a class="btn btn-primary" href="mailto:info@curiosta.com?subject=Parts%20enquiry%3A%20Compost%20Health%20Probe%20%28Temperature%20%2B%20Moisture%2C%20Low-Power%29&amp;body=Hi%2C%20I%20would%20like%20to%20buy%20or%20import%20parts%20for%20this%20Maker%20by%20Curiosta%20project%3A%0ACompost%20Health%20Probe%20%28Temperature%20%2B%20Moisture%2C%20Low-Power%29%0A%0AParts%3A%0A-%20xiao-esp32c3%20x%201%20pcs%0A-%20ds18b20-waterproof%20x%201%20pcs%0A-%20resistor-4k7-x10%20x%201%20set%0A-%20soil-moisture-capacitive%20x%201%20pcs%0A-%20lipo-3.7v-500mah-jst%20x%201%20pcs%0A-%20header-male-40x1%20x%201%20pcs%0A-%20jumpers-f2m-20cm-20%20x%201%20set%0A-%20cable-usb-c-1m%20x%201%20pcs%20%28optional%29%0A-%20filament-petg-1kg%20x%201%20pcs%20%28optional%29%0A%0AQuantity%20of%20kits%3A%201%0ADelivery%20city%20%2F%20PIN%3A%20%0A">Email info@curiosta.com</a></p>
+</div>
+<nav class="pager" aria-label="Other projects"><a href="../bike-road-quality-mapper/">&larr; Bike-Mounted Road Quality and Pothole Mapper</a><a href="../pet-bottle-filament-pultruder/">PET-Bottle Strip Filament Pultruder &rarr;</a></nav>
+</div></section>
+</main>
+<footer class="site-footer"><div class="wrap">
+<div class="cols">
+<div><h2>Maker by Curiosta</h2>
+<p>Maker project ideas with pre-selected parts lists, plus an unofficial Fab Academy companion. First draft.</p>
+<p><strong>Unofficial.</strong> maker.curiosta.com is an independent companion for Fab Academy students. It is not affiliated with, endorsed by or part of Fab Academy or the Fab Foundation. The official course is at <a href="https://fabacademy.org/">fabacademy.org</a>, and it is the authority on requirements, deadlines and grading.</p></div>
+<div><h2>Explore</h2><ul>
+<li><a href="../../curriculum/">Curriculum</a></li><li><a href="../../projects/">Projects</a></li><li><a href="../../goals/">Goals</a></li>
+<li><a href="../../parts/">Parts catalogue</a></li><li><a href="../../ask/">Ask</a></li></ul></div>
+<div><h2>Buy parts</h2><ul>
+<li><a href="../../parts/#how-to-buy">How to buy</a></li>
+<li><a href="mailto:info@curiosta.com">info@curiosta.com</a></li></ul></div>
+</div>
+<p class="fine">Draft content. Prices are third-party listings read on the date shown and are not a Curiosta quote; GST rates are unverified. No online checkout, no analytics, no trackers.</p>
+</div></footer>
+<script src="../../assets/chat/chat-loader.js" defer></script>
+</body>
+</html>

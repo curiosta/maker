@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; font-src 'self'; img-src 'self' data:; connect-src 'self' https://openrouter.ai; frame-src 'none'; form-action 'none'; base-uri 'self'; object-src 'none'">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Street Noise Level Meter (I2S Microphone, dB Logging) | Maker by Curiosta</title>
+<meta name="description" content="SDG 11 · Sustainable Cities and Communities. An ESP32 with an INMP441 microphone shows the current and peak sound level on an OLED and an LED bar, and logs readings to a dashboard so you can compare places and times of day. Difficulty: intermediate. Build time: 6-8 hours. Some parts are not priced y">
+<link rel="canonical" href="https://maker.curiosta.com/projects/street-noise-meter/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Maker by Curiosta">
+<meta property="og:title" content="Street Noise Level Meter (I2S Microphone, dB Logging) | Maker by Curiosta">
+<meta property="og:description" content="SDG 11 · Sustainable Cities and Communities. An ESP32 with an INMP441 microphone shows the current and peak sound level on an OLED and an LED bar, and logs readings to a dashboard so you can compare places and times of day. Difficulty: intermediate. Build time: 6-8 hours. Some parts are not priced y">
+<meta property="og:url" content="https://maker.curiosta.com/projects/street-noise-meter/">
+<meta name="twitter:card" content="summary">
+<meta name="theme-color" content="#041726">
+<link rel="icon" href="../../assets/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="../../assets/style.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="topbar site-header"><div class="wrap">
+<a class="brand" href="../../"><b>Maker</b><span>by Curiosta</span></a>
+<nav aria-label="Main"><ul class="nav"><li><a href="../../">Home</a></li><li><a href="../../curriculum/">Curriculum</a></li><li><a aria-current="page" href="../../projects/">Projects</a></li><li><a href="../../goals/">Goals</a></li><li><a href="../../parts/">Parts</a></li><li><a href="../../ask/">Ask</a></li><li><a href="../../parts/#how-to-buy">How to buy</a></li></ul></nav>
+</div></header>
+<main id="main">
+<section class="hero compact"><div class="wrap">
+<nav class="crumbs" aria-label="Breadcrumb"><ol><li><a href="../../">Home</a></li><li><a href="../">Projects</a></li><li><span aria-current="page">Street Noise Level Meter (I2S Microphone, dB Logging)</span></li></ol></nav>
+<p class="eyebrow">Project · draft</p>
+<h1>Street Noise Level Meter (I2S Microphone, dB Logging)</h1>
+<ul class="chips"><li class="chip intermediate">intermediate</li><li class="chip">6-8 hours</li></ul>
+</div></section>
+<section class="block"><div class="wrap narrow">
+<div class="callout sdg"><p class="sdg-label"><a href="../../goals/11/">SDG 11 · Sustainable Cities and Communities</a></p>
+<p>Maps noise exposure around a school, market or junction, one of the urban environmental impacts that target 11.6 asks cities to reduce.</p></div>
+<div class="callout safety" id="safety"><h2>Safety notes</h2><ul class="clean"><li>Indicative only: an uncalibrated MEMS meter is not a Class 1/2 sound level meter and its readings cannot be used for official noise-rule complaints.</li><li>Record levels, not audio, to respect privacy.</li></ul></div>
+<div class="callout warn"><p>Draft and unofficial, not affiliated with Fab Academy or the United Nations. Check prices, GST and parts before you buy.</p></div>
+<h2>Summary</h2><p>An ESP32 with an INMP441 microphone shows the current and peak sound level on an OLED and an LED bar, and logs readings to a dashboard so you can compare places and times of day.</p>
+<h2>What it teaches</h2><p>Capture audio over I2S, compute RMS level in dBFS, apply an approximate A-weighting, calibrate the offset against a reference meter, and log time-stamped readings over Wi-Fi with an honest uncertainty note.</p>
+<p class="muted" id="topics-label">Topics it touches, in Fab Academy-style terms:</p>
+<ul class="chips" aria-labelledby="topics-label"><li class="chip topic">Input devices</li><li class="chip topic">Output devices</li><li class="chip topic">Embedded programming</li><li class="chip topic">Networking and communications</li><li class="chip topic">Computer-controlled cutting (optional case)</li></ul>
+</div></section>
+<section class="block alt"><div class="wrap">
+<h2>Parts list</h2>
+<div class="callout warn"><h2>Parts cost</h2>
+<p class="no-total">Some parts are not priced yet, so there's no total.</p>
+<p>1 required part is marked <span class="flag na">not priced yet</span> below, and 1 optional. Where a price is known it is shown per part, GST-inclusive as the seller listed it on 24 Oct 2026, with the GST rate unverified. Shipping is not included.</p></div>
+<div class="tbl-wrap"><table class="tbl"><caption>Required parts</caption><thead><tr><th scope="col">Part</th><th scope="col" class="num">Qty</th><th scope="col">Unit</th><th scope="col" class="num">Price, GST-incl. as listed</th><th scope="col" class="num">Line cost</th><th scope="col">GST</th><th scope="col">Source</th></tr></thead><tbody><tr><th scope="row" data-label="Part"><a href="../../parts/#esp32-devkit-30pin">ESP32 NodeMCU 30-Pin WiFi Bluetooth Development Board CP2102</a><span class="small mono">esp32-devkit-30pin</span></th><td class="num" data-label="Qty">1</td><td data-label="Unit">pcs</td><td class="num" data-label="Price, GST-incl. as listed">₹425</td><td class="num" data-label="Line cost">₹425</td><td data-label="GST"><span class="flag">GST unverified, typically 18%</span></td><td data-label="Source"><a href="https://robocraze.com/products/nodemcu-32-wifi-bluetooth-esp32-development-board30-pin" rel="noopener noreferrer">Robocraze</a><span class="small">read 24 Oct 2026</span></td></tr><tr><th scope="row" data-label="Part"><a href="../../parts/#inmp441-i2s-mic">INMP441 I2S MEMS microphone module</a><span class="small mono">inmp441-i2s-mic</span></th><td class="num" data-label="Qty">1</td><td data-label="Unit">pcs</td><td class="num" data-label="Price, GST-incl. as listed"><span class="flag na">not priced yet</span></td><td class="num" data-label="Line cost"><span class="flag na">not priced yet</span></td><td data-label="GST"><span class="flag">GST unverified</span></td><td data-label="Source"><span class="small">no seller yet</span></td></tr><tr><th scope="row" data-label="Part"><a href="../../parts/#oled-096-i2c">0.96 Inch OLED Display Module SPI/I2C 4pin Blue Color</a><span class="small mono">oled-096-i2c</span><span class="small">I2C 0x3C</span></th><td class="num" data-label="Qty">1</td><td data-label="Unit">pcs</td><td class="num" data-label="Price, GST-incl. as listed">₹167</td><td class="num" data-label="Line cost">₹167</td><td data-label="GST"><span class="flag">GST unverified, typically 18%</span></td><td data-label="Source"><a href="https://robocraze.com/products/0-96in-oled-display-module-4pin" rel="noopener noreferrer">Robocraze</a><span class="small">read 24 Oct 2026</span></td></tr><tr><th scope="row" data-label="Part"><a href="../../parts/#led-ws2812-8bar">WS2812 8 Bit RGB LED (straight)</a><span class="small mono">led-ws2812-8bar</span><span class="small">Level bar</span></th><td class="num" data-label="Qty">1</td><td data-label="Unit">pcs</td><td class="num" data-label="Price, GST-incl. as listed">₹30</td><td class="num" data-label="Line cost">₹30</td><td data-label="GST"><span class="flag">GST unverified, typically 18%</span></td><td data-label="Source"><a href="https://robocraze.com/products/ws2812-8-bit-rgb-led-straight" rel="noopener noreferrer">Robocraze</a><span class="small">read 24 Oct 2026</span></td></tr><tr><th scope="row" data-label="Part"><a href="../../parts/#breadboard-half-400">400 Tie Points Solderless Breadboard</a><span class="small mono">breadboard-half-400</span></th><td class="num" data-label="Qty">1</td><td data-label="Unit">pcs</td><td class="num" data-label="Price, GST-incl. as listed">₹39</td><td class="num" data-label="Line cost">₹39</td><td data-label="GST"><span class="flag">GST unverified, typically 18%</span></td><td data-label="Source"><a href="https://robocraze.com/products/half-breadboard" rel="noopener noreferrer">Robocraze</a><span class="small">read 24 Oct 2026</span></td></tr><tr><th scope="row" data-label="Part"><a href="../../parts/#jumpers-f2m-20cm-20">Male to Female Jumper Wires (20cm) (20pcs)</a><span class="small mono">jumpers-f2m-20cm-20</span><span class="small">Pack: pack of 20 male-female 20cm</span></th><td class="num" data-label="Qty">1</td><td data-label="Unit">set</td><td class="num" data-label="Price, GST-incl. as listed">₹28</td><td class="num" data-label="Line cost">₹28</td><td data-label="GST"><span class="flag">GST unverified, typically 18%</span></td><td data-label="Source"><a href="https://robocraze.com/products/f2m-jumper-wires-20cm-20pcs" rel="noopener noreferrer">Robocraze</a><span class="small">read 24 Oct 2026</span></td></tr><tr><th scope="row" data-label="Part"><a href="../../parts/#jumpers-m2m-20cm-20">Male to Male Jumper Wires (20cm) (20pcs)</a><span class="small mono">jumpers-m2m-20cm-20</span><span class="small">Pack: pack of 20 male-male 20cm</span></th><td class="num" data-label="Qty">1</td><td data-label="Unit">set</td><td class="num" data-label="Price, GST-incl. as listed">₹31</td><td class="num" data-label="Line cost">₹31</td><td data-label="GST"><span class="flag">GST unverified, typically 18%</span></td><td data-label="Source"><a href="https://robocraze.com/products/m2m-jumper-wires-20cm-20pcs" rel="noopener noreferrer">Robocraze</a><span class="small">read 24 Oct 2026</span></td></tr></tbody></table></div>
+<div class="tbl-wrap"><table class="tbl"><caption>Optional extras (not in any total)</caption><thead><tr><th scope="col">Part</th><th scope="col" class="num">Qty</th><th scope="col">Unit</th><th scope="col" class="num">Price, GST-incl. as listed</th><th scope="col" class="num">Line cost</th><th scope="col">GST</th><th scope="col">Source</th></tr></thead><tbody><tr><th scope="row" data-label="Part"><a href="../../parts/#cable-usb-micro-1m">USB A Type to Micro USB B Type 1M Cable (Colour may vary)</a><span class="small mono">cable-usb-micro-1m</span><span class="small">Skip if you already have a data-capable micro-USB cable</span></th><td class="num" data-label="Qty">1</td><td data-label="Unit">pcs</td><td class="num" data-label="Price, GST-incl. as listed">₹36</td><td class="num" data-label="Line cost">₹36</td><td data-label="GST"><span class="flag">GST unverified, typically 18%</span></td><td data-label="Source"><a href="https://robocraze.com/products/usb-to-micro-usb-cable" rel="noopener noreferrer">Robocraze</a><span class="small">read 24 Oct 2026</span></td></tr><tr><th scope="row" data-label="Part"><a href="../../parts/#acrylic-3mm-sheet">Cast/extruded acrylic sheet, 3 mm (laser-cut parts)</a><span class="small mono">acrylic-3mm-sheet</span><span class="small">Laser-cut case with mic port</span></th><td class="num" data-label="Qty">1</td><td data-label="Unit">sheet</td><td class="num" data-label="Price, GST-incl. as listed"><span class="flag na">not priced yet</span></td><td class="num" data-label="Line cost"><span class="flag na">not priced yet</span></td><td data-label="GST"><span class="flag">GST unverified</span></td><td data-label="Source"><span class="small">no seller yet</span></td></tr></tbody></table></div>
+<p class="muted">The Part column links to the shared catalogue. Units are pcs, m, g, sheet or set, and a "set" is the seller's pack, as noted per part.</p>
+</div></section>
+<section class="block"><div class="wrap narrow">
+<h2>Tools you will need</h2><ul class="clean"><li>Laptop with Arduino IDE/PlatformIO</li><li>Reference: a calibrated sound level meter (borrow) or, less accurate, a phone app</li></ul>
+
+<h2>Build notes</h2>
+<p>Step-by-step build notes have not been written yet for this draft. The summary, the topics above and the parts list are what exists so far.</p>
+<div class="callout">
+<h2>How to buy</h2>
+<p>There is no online checkout. To buy or import these parts, email <a href="mailto:info@curiosta.com?subject=Parts%20enquiry%3A%20Street%20Noise%20Level%20Meter%20%28I2S%20Microphone%2C%20dB%20Logging%29&amp;body=Hi%2C%20I%20would%20like%20to%20buy%20or%20import%20parts%20for%20this%20Maker%20by%20Curiosta%20project%3A%0AStreet%20Noise%20Level%20Meter%20%28I2S%20Microphone%2C%20dB%20Logging%29%0A%0AParts%3A%0A-%20esp32-devkit-30pin%20x%201%20pcs%0A-%20inmp441-i2s-mic%20x%201%20pcs%0A-%20oled-096-i2c%20x%201%20pcs%0A-%20led-ws2812-8bar%20x%201%20pcs%0A-%20breadboard-half-400%20x%201%20pcs%0A-%20jumpers-f2m-20cm-20%20x%201%20set%0A-%20jumpers-m2m-20cm-20%20x%201%20set%0A-%20cable-usb-micro-1m%20x%201%20pcs%20%28optional%29%0A-%20acrylic-3mm-sheet%20x%201%20sheet%20%28optional%29%0A%0AQuantity%20of%20kits%3A%201%0ADelivery%20city%20%2F%20PIN%3A%20%0A">info@curiosta.com</a> and say what you need. The button opens your own email app with a draft; nothing is sent until you send it.</p>
+<p class="muted">Prices on this site are third-party seller listings, not a Curiosta quote. Ask by email for availability, price and GST.</p>
+<p><a class="btn btn-primary" href="mailto:info@curiosta.com?subject=Parts%20enquiry%3A%20Street%20Noise%20Level%20Meter%20%28I2S%20Microphone%2C%20dB%20Logging%29&amp;body=Hi%2C%20I%20would%20like%20to%20buy%20or%20import%20parts%20for%20this%20Maker%20by%20Curiosta%20project%3A%0AStreet%20Noise%20Level%20Meter%20%28I2S%20Microphone%2C%20dB%20Logging%29%0A%0AParts%3A%0A-%20esp32-devkit-30pin%20x%201%20pcs%0A-%20inmp441-i2s-mic%20x%201%20pcs%0A-%20oled-096-i2c%20x%201%20pcs%0A-%20led-ws2812-8bar%20x%201%20pcs%0A-%20breadboard-half-400%20x%201%20pcs%0A-%20jumpers-f2m-20cm-20%20x%201%20set%0A-%20jumpers-m2m-20cm-20%20x%201%20set%0A-%20cable-usb-micro-1m%20x%201%20pcs%20%28optional%29%0A-%20acrylic-3mm-sheet%20x%201%20sheet%20%28optional%29%0A%0AQuantity%20of%20kits%3A%201%0ADelivery%20city%20%2F%20PIN%3A%20%0A">Email info@curiosta.com</a></p>
+</div>
+<nav class="pager" aria-label="Other projects"><a href="../talking-tactile-campus-map/">&larr; Laser-Cut Tactile Campus Map with Braille and Touch Audio</a><a href="../bike-road-quality-mapper/">Bike-Mounted Road Quality and Pothole Mapper &rarr;</a></nav>
+</div></section>
+</main>
+<footer class="site-footer"><div class="wrap">
+<div class="cols">
+<div><h2>Maker by Curiosta</h2>
+<p>Maker project ideas with pre-selected parts lists, plus an unofficial Fab Academy companion. First draft.</p>
+<p><strong>Unofficial.</strong> maker.curiosta.com is an independent companion for Fab Academy students. It is not affiliated with, endorsed by or part of Fab Academy or the Fab Foundation. The official course is at <a href="https://fabacademy.org/">fabacademy.org</a>, and it is the authority on requirements, deadlines and grading.</p></div>
+<div><h2>Explore</h2><ul>
+<li><a href="../../curriculum/">Curriculum</a></li><li><a href="../../projects/">Projects</a></li><li><a href="../../goals/">Goals</a></li>
+<li><a href="../../parts/">Parts catalogue</a></li><li><a href="../../ask/">Ask</a></li></ul></div>
+<div><h2>Buy parts</h2><ul>
+<li><a href="../../parts/#how-to-buy">How to buy</a></li>
+<li><a href="mailto:info@curiosta.com">info@curiosta.com</a></li></ul></div>
+</div>
+<p class="fine">Draft content. Prices are third-party listings read on the date shown and are not a Curiosta quote; GST rates are unverified. No online checkout, no analytics, no trackers.</p>
+</div></footer>
+<script src="../../assets/chat/chat-loader.js" defer></script>
+</body>
+</html>

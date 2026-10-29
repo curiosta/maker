@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; font-src 'self'; img-src 'self' data:; connect-src 'self' https://openrouter.ai; frame-src 'none'; form-action 'none'; base-uri 'self'; object-src 'none'">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Drinking-Water TDS and Temperature Meter | Maker by Curiosta</title>
+<meta name="description" content="SDG 6 · Clean Water and Sanitation. Dip the two probes in a sample: the OLED shows TDS (ppm) and water temperature, and logs readings over USB serial so you can compare tap, borewell, filtered and RO water. Difficulty: beginner. Build time: 4-6 hours. Some parts are not priced yet.">
+<link rel="canonical" href="https://maker.curiosta.com/projects/drinking-water-tds-meter/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Maker by Curiosta">
+<meta property="og:title" content="Drinking-Water TDS and Temperature Meter | Maker by Curiosta">
+<meta property="og:description" content="SDG 6 · Clean Water and Sanitation. Dip the two probes in a sample: the OLED shows TDS (ppm) and water temperature, and logs readings over USB serial so you can compare tap, borewell, filtered and RO water. Difficulty: beginner. Build time: 4-6 hours. Some parts are not priced yet.">
+<meta property="og:url" content="https://maker.curiosta.com/projects/drinking-water-tds-meter/">
+<meta name="twitter:card" content="summary">
+<meta name="theme-color" content="#041726">
+<link rel="icon" href="../../assets/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="../../assets/style.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="topbar site-header"><div class="wrap">
+<a class="brand" href="../../"><b>Maker</b><span>by Curiosta</span></a>
+<nav aria-label="Main"><ul class="nav"><li><a href="../../">Home</a></li><li><a href="../../curriculum/">Curriculum</a></li><li><a aria-current="page" href="../../projects/">Projects</a></li><li><a href="../../goals/">Goals</a></li><li><a href="../../parts/">Parts</a></li><li><a href="../../ask/">Ask</a></li><li><a href="../../parts/#how-to-buy">How to buy</a></li></ul></nav>
+</div></header>
+<main id="main">
+<section class="hero compact"><div class="wrap">
+<nav class="crumbs" aria-label="Breadcrumb"><ol><li><a href="../../">Home</a></li><li><a href="../">Projects</a></li><li><span aria-current="page">Drinking-Water TDS and Temperature Meter</span></li></ol></nav>
+<p class="eyebrow">Project · draft</p>
+<h1>Drinking-Water TDS and Temperature Meter</h1>
+<ul class="chips"><li class="chip beginner">beginner</li><li class="chip">4-6 hours</li></ul>
+</div></section>
+<section class="block"><div class="wrap narrow">
+<div class="callout sdg"><p class="sdg-label"><a href="../../goals/6/">SDG 6 · Clean Water and Sanitation</a></p>
+<p>Lets households and schools compare water sources and check whether a filter or RO unit is still reducing dissolved solids.</p></div>
+<div class="callout safety" id="safety"><h2>Safety notes</h2><ul class="clean"><li>TDS is not a safety test: it does not detect bacteria, arsenic, fluoride, nitrate or other contaminants. Never use it to decide water is safe to drink; use an accredited lab test for that.</li><li>Do not drink a sample after the probes have been in it. Keep the board and USB side dry.</li></ul></div>
+<div class="callout warn"><p>Draft and unofficial, not affiliated with Fab Academy or the United Nations. Check prices, GST and parts before you buy.</p></div>
+<h2>Summary</h2><p>Dip the two probes in a sample: the OLED shows TDS (ppm) and water temperature, and logs readings over USB serial so you can compare tap, borewell, filtered and RO water.</p>
+<h2>What it teaches</h2><p>Read an analog conductivity-based TDS probe, apply temperature compensation from a 1-Wire DS18B20, calibrate against a reference solution, and understand what TDS can and cannot tell you about water.</p>
+<p class="muted" id="topics-label">Topics it touches, in Fab Academy-style terms:</p>
+<ul class="chips" aria-labelledby="topics-label"><li class="chip topic">Input devices</li><li class="chip topic">Embedded programming</li><li class="chip topic">3D scanning and printing (optional probe holder)</li></ul>
+</div></section>
+<section class="block alt"><div class="wrap">
+<h2>Parts list</h2>
+<div class="callout warn"><h2>Parts cost</h2>
+<p class="no-total">Some parts are not priced yet, so there's no total.</p>
+<p>3 required parts are marked <span class="flag na">not priced yet</span> below. Where a price is known it is shown per part, GST-inclusive as the seller listed it on 24 Oct 2026, with the GST rate unverified. Shipping is not included.</p></div>
+<div class="tbl-wrap"><table class="tbl"><caption>Required parts</caption><thead><tr><th scope="col">Part</th><th scope="col" class="num">Qty</th><th scope="col">Unit</th><th scope="col" class="num">Price, GST-incl. as listed</th><th scope="col" class="num">Line cost</th><th scope="col">GST</th><th scope="col">Source</th></tr></thead><tbody><tr><th scope="row" data-label="Part"><a href="../../parts/#xiao-rp2040">Seeed Studio XIAO RP2040 Development Board</a><span class="small mono">xiao-rp2040</span></th><td class="num" data-label="Qty">1</td><td data-label="Unit">pcs</td><td class="num" data-label="Price, GST-incl. as listed">₹513</td><td class="num" data-label="Line cost">₹513</td><td data-label="GST"><span class="flag">GST unverified, typically 18%</span></td><td data-label="Source"><a href="https://robocraze.com/products/seeed-studio-xiao-rp2040-development-board" rel="noopener noreferrer">Robocraze</a><span class="small">read 24 Oct 2026</span></td></tr><tr><th scope="row" data-label="Part"><a href="../../parts/#tds-sensor-module">Analog TDS (total dissolved solids) sensor module with probe</a><span class="small mono">tds-sensor-module</span></th><td class="num" data-label="Qty">1</td><td data-label="Unit">pcs</td><td class="num" data-label="Price, GST-incl. as listed"><span class="flag na">not priced yet</span></td><td class="num" data-label="Line cost"><span class="flag na">not priced yet</span></td><td data-label="GST"><span class="flag">GST unverified</span></td><td data-label="Source"><span class="small">no seller yet</span></td></tr><tr><th scope="row" data-label="Part"><a href="../../parts/#ds18b20-waterproof">DS18B20 waterproof temperature probe (1-Wire), ~1 m lead</a><span class="small mono">ds18b20-waterproof</span></th><td class="num" data-label="Qty">1</td><td data-label="Unit">pcs</td><td class="num" data-label="Price, GST-incl. as listed"><span class="flag na">not priced yet</span></td><td class="num" data-label="Line cost"><span class="flag na">not priced yet</span></td><td data-label="GST"><span class="flag">GST unverified</span></td><td data-label="Source"><span class="small">no seller yet</span></td></tr><tr><th scope="row" data-label="Part"><a href="../../parts/#resistor-4k7-x10">4.7 kOhm resistor, through-hole (pack of 10)</a><span class="small mono">resistor-4k7-x10</span><span class="small">1-Wire pull-up; uses 1</span></th><td class="num" data-label="Qty">1</td><td data-label="Unit">set</td><td class="num" data-label="Price, GST-incl. as listed"><span class="flag na">not priced yet</span></td><td class="num" data-label="Line cost"><span class="flag na">not priced yet</span></td><td data-label="GST"><span class="flag">GST unverified</span></td><td data-label="Source"><span class="small">no seller yet</span></td></tr><tr><th scope="row" data-label="Part"><a href="../../parts/#oled-096-i2c">0.96 Inch OLED Display Module SPI/I2C 4pin Blue Color</a><span class="small mono">oled-096-i2c</span><span class="small">I2C 0x3C</span></th><td class="num" data-label="Qty">1</td><td data-label="Unit">pcs</td><td class="num" data-label="Price, GST-incl. as listed">₹167</td><td class="num" data-label="Line cost">₹167</td><td data-label="GST"><span class="flag">GST unverified, typically 18%</span></td><td data-label="Source"><a href="https://robocraze.com/products/0-96in-oled-display-module-4pin" rel="noopener noreferrer">Robocraze</a><span class="small">read 24 Oct 2026</span></td></tr><tr><th scope="row" data-label="Part"><a href="../../parts/#breadboard-half-400">400 Tie Points Solderless Breadboard</a><span class="small mono">breadboard-half-400</span></th><td class="num" data-label="Qty">1</td><td data-label="Unit">pcs</td><td class="num" data-label="Price, GST-incl. as listed">₹39</td><td class="num" data-label="Line cost">₹39</td><td data-label="GST"><span class="flag">GST unverified, typically 18%</span></td><td data-label="Source"><a href="https://robocraze.com/products/half-breadboard" rel="noopener noreferrer">Robocraze</a><span class="small">read 24 Oct 2026</span></td></tr><tr><th scope="row" data-label="Part"><a href="../../parts/#jumpers-m2m-20cm-20">Male to Male Jumper Wires (20cm) (20pcs)</a><span class="small mono">jumpers-m2m-20cm-20</span><span class="small">Pack: pack of 20 male-male 20cm</span></th><td class="num" data-label="Qty">1</td><td data-label="Unit">set</td><td class="num" data-label="Price, GST-incl. as listed">₹31</td><td class="num" data-label="Line cost">₹31</td><td data-label="GST"><span class="flag">GST unverified, typically 18%</span></td><td data-label="Source"><a href="https://robocraze.com/products/m2m-jumper-wires-20cm-20pcs" rel="noopener noreferrer">Robocraze</a><span class="small">read 24 Oct 2026</span></td></tr><tr><th scope="row" data-label="Part"><a href="../../parts/#jumpers-f2m-20cm-20">Male to Female Jumper Wires (20cm) (20pcs)</a><span class="small mono">jumpers-f2m-20cm-20</span><span class="small">Pack: pack of 20 male-female 20cm</span></th><td class="num" data-label="Qty">1</td><td data-label="Unit">set</td><td class="num" data-label="Price, GST-incl. as listed">₹28</td><td class="num" data-label="Line cost">₹28</td><td data-label="GST"><span class="flag">GST unverified, typically 18%</span></td><td data-label="Source"><a href="https://robocraze.com/products/f2m-jumper-wires-20cm-20pcs" rel="noopener noreferrer">Robocraze</a><span class="small">read 24 Oct 2026</span></td></tr></tbody></table></div>
+<div class="tbl-wrap"><table class="tbl"><caption>Optional extras (not in any total)</caption><thead><tr><th scope="col">Part</th><th scope="col" class="num">Qty</th><th scope="col">Unit</th><th scope="col" class="num">Price, GST-incl. as listed</th><th scope="col" class="num">Line cost</th><th scope="col">GST</th><th scope="col">Source</th></tr></thead><tbody><tr><th scope="row" data-label="Part"><a href="../../parts/#cable-usb-c-1m">Type C USB Cable (1 metre)</a><span class="small mono">cable-usb-c-1m</span><span class="small">Skip if you already have a data-capable USB-C cable</span></th><td class="num" data-label="Qty">1</td><td data-label="Unit">pcs</td><td class="num" data-label="Price, GST-incl. as listed">₹65</td><td class="num" data-label="Line cost">₹65</td><td data-label="GST"><span class="flag">GST unverified, typically 18%</span></td><td data-label="Source"><a href="https://robocraze.com/products/type-c-usb-cable-1-metre" rel="noopener noreferrer">Robocraze</a><span class="small">read 24 Oct 2026</span></td></tr><tr><th scope="row" data-label="Part"><a href="../../parts/#filament-pla-1kg">Premium 1.75MM HS PLA 1 KG 3d Printer Filament - Cement grey Colour</a><span class="small mono">filament-pla-1kg</span><span class="small">Optional probe holder / case; Fab Lab stock</span></th><td class="num" data-label="Qty">1</td><td data-label="Unit">pcs</td><td class="num" data-label="Price, GST-incl. as listed">₹741</td><td class="num" data-label="Line cost">₹741</td><td data-label="GST"><span class="flag">GST unverified, typically 18%</span></td><td data-label="Source"><a href="https://robocraze.com/products/premium-1-75mm-hs-pla-1-kg-3d-printer-filament-cement-grey-colour" rel="noopener noreferrer">Robocraze</a><span class="small">read 24 Oct 2026</span></td></tr></tbody><tfoot><tr><th scope="row" colspan="4">Optional extras total, GST-inclusive as listed by the seller</th><td class="num" data-label="Optional extras total">₹806</td><td colspan="2"></td></tr></tfoot></table></div>
+<p class="muted">The Part column links to the shared catalogue. Units are pcs, m, g, sheet or set, and a "set" is the seller's pack, as noted per part.</p>
+</div></section>
+<section class="block"><div class="wrap narrow">
+<h2>Tools you will need</h2><ul class="clean"><li>Laptop with MicroPython/Thonny or Arduino-Pico</li><li>Clean sample cups; TDS calibration solution (unpriced consumable)</li></ul>
+
+<h2>Build notes</h2>
+<p>Step-by-step build notes have not been written yet for this draft. The summary, the topics above and the parts list are what exists so far.</p>
+<div class="callout">
+<h2>How to buy</h2>
+<p>There is no online checkout. To buy or import these parts, email <a href="mailto:info@curiosta.com?subject=Parts%20enquiry%3A%20Drinking-Water%20TDS%20and%20Temperature%20Meter&amp;body=Hi%2C%20I%20would%20like%20to%20buy%20or%20import%20parts%20for%20this%20Maker%20by%20Curiosta%20project%3A%0ADrinking-Water%20TDS%20and%20Temperature%20Meter%0A%0AParts%3A%0A-%20xiao-rp2040%20x%201%20pcs%0A-%20tds-sensor-module%20x%201%20pcs%0A-%20ds18b20-waterproof%20x%201%20pcs%0A-%20resistor-4k7-x10%20x%201%20set%0A-%20oled-096-i2c%20x%201%20pcs%0A-%20breadboard-half-400%20x%201%20pcs%0A-%20jumpers-m2m-20cm-20%20x%201%20set%0A-%20jumpers-f2m-20cm-20%20x%201%20set%0A-%20cable-usb-c-1m%20x%201%20pcs%20%28optional%29%0A-%20filament-pla-1kg%20x%201%20pcs%20%28optional%29%0A%0AQuantity%20of%20kits%3A%201%0ADelivery%20city%20%2F%20PIN%3A%20%0A">info@curiosta.com</a> and say what you need. The button opens your own email app with a draft; nothing is sent until you send it.</p>
+<p class="muted">Prices on this site are third-party seller listings, not a Curiosta quote. Ask by email for availability, price and GST.</p>
+<p><a class="btn btn-primary" href="mailto:info@curiosta.com?subject=Parts%20enquiry%3A%20Drinking-Water%20TDS%20and%20Temperature%20Meter&amp;body=Hi%2C%20I%20would%20like%20to%20buy%20or%20import%20parts%20for%20this%20Maker%20by%20Curiosta%20project%3A%0ADrinking-Water%20TDS%20and%20Temperature%20Meter%0A%0AParts%3A%0A-%20xiao-rp2040%20x%201%20pcs%0A-%20tds-sensor-module%20x%201%20pcs%0A-%20ds18b20-waterproof%20x%201%20pcs%0A-%20resistor-4k7-x10%20x%201%20set%0A-%20oled-096-i2c%20x%201%20pcs%0A-%20breadboard-half-400%20x%201%20pcs%0A-%20jumpers-m2m-20cm-20%20x%201%20set%0A-%20jumpers-f2m-20cm-20%20x%201%20set%0A-%20cable-usb-c-1m%20x%201%20pcs%20%28optional%29%0A-%20filament-pla-1kg%20x%201%20pcs%20%28optional%29%0A%0AQuantity%20of%20kits%3A%201%0ADelivery%20city%20%2F%20PIN%3A%20%0A">Email info@curiosta.com</a></p>
+</div>
+<nav class="pager" aria-label="Other projects"><a href="../school-pad-dispenser/">&larr; Free Menstrual Pad Dispenser with Low-Stock Alert for Schools</a><a href="../rainwater-tank-level-lora/">Rainwater Tank Level Monitor over LoRa (865 MHz) &rarr;</a></nav>
+</div></section>
+</main>
+<footer class="site-footer"><div class="wrap">
+<div class="cols">
+<div><h2>Maker by Curiosta</h2>
+<p>Maker project ideas with pre-selected parts lists, plus an unofficial Fab Academy companion. First draft.</p>
+<p><strong>Unofficial.</strong> maker.curiosta.com is an independent companion for Fab Academy students. It is not affiliated with, endorsed by or part of Fab Academy or the Fab Foundation. The official course is at <a href="https://fabacademy.org/">fabacademy.org</a>, and it is the authority on requirements, deadlines and grading.</p></div>
+<div><h2>Explore</h2><ul>
+<li><a href="../../curriculum/">Curriculum</a></li><li><a href="../../projects/">Projects</a></li><li><a href="../../goals/">Goals</a></li>
+<li><a href="../../parts/">Parts catalogue</a></li><li><a href="../../ask/">Ask</a></li></ul></div>
+<div><h2>Buy parts</h2><ul>
+<li><a href="../../parts/#how-to-buy">How to buy</a></li>
+<li><a href="mailto:info@curiosta.com">info@curiosta.com</a></li></ul></div>
+</div>
+<p class="fine">Draft content. Prices are third-party listings read on the date shown and are not a Curiosta quote; GST rates are unverified. No online checkout, no analytics, no trackers.</p>
+</div></footer>
+<script src="../../assets/chat/chat-loader.js" defer></script>
+</body>
+</html>

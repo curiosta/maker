@@ -5,12 +5,12 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Maker by Curiosta</title>
-<meta name="description" content="Draft, unofficial maker project ideas with pre-selected parts lists for students of Fab Academy-style topics. Not affiliated with Fab Academy.">
+<meta name="description" content="Draft, unofficial maker project ideas with pre-selected parts lists for students of Fab Academy-style topics, grouped by UN Sustainable Development Goal. Not affiliated with Fab Academy or the UN.">
 <link rel="canonical" href="https://maker.curiosta.com/">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Maker by Curiosta">
 <meta property="og:title" content="Maker by Curiosta">
-<meta property="og:description" content="Draft, unofficial maker project ideas with pre-selected parts lists for students of Fab Academy-style topics. Not affiliated with Fab Academy.">
+<meta property="og:description" content="Draft, unofficial maker project ideas with pre-selected parts lists for students of Fab Academy-style topics, grouped by UN Sustainable Development Goal. Not affiliated with Fab Academy or the UN.">
 <meta property="og:url" content="https://maker.curiosta.com/">
 <meta name="twitter:card" content="summary">
 <meta name="theme-color" content="#041726">
@@ -21,22 +21,23 @@
 <a class="skip" href="#main">Skip to content</a>
 <header class="topbar site-header"><div class="wrap">
 <a class="brand" href=""><b>Maker</b><span>by Curiosta</span></a>
-<nav aria-label="Main"><ul class="nav"><li><a aria-current="page" href="">Home</a></li><li><a href="curriculum/">Curriculum</a></li><li><a href="projects/">Projects</a></li><li><a href="parts/">Parts</a></li><li><a href="ask/">Ask</a></li><li><a href="parts/#how-to-buy">How to buy</a></li></ul></nav>
+<nav aria-label="Main"><ul class="nav"><li><a aria-current="page" href="">Home</a></li><li><a href="curriculum/">Curriculum</a></li><li><a href="projects/">Projects</a></li><li><a href="goals/">Goals</a></li><li><a href="parts/">Parts</a></li><li><a href="ask/">Ask</a></li><li><a href="parts/#how-to-buy">How to buy</a></li></ul></nav>
 </div></header>
 <main id="main">
 <section class="hero"><div class="wrap">
 <p class="eyebrow">Maker by Curiosta · first draft</p>
 <h1>Maker projects with the parts already picked.</h1>
 <p class="lead">Project ideas for students working through Fab Academy-style topics such as electronics, embedded programming, laser cutting, milling and casting. Each one comes with a parts list, so you can see what a build needs before you start.</p>
-<div class="btn-row"><a class="btn btn-primary" href="projects/">Browse 5 projects</a><a class="btn btn-ghost" href="curriculum/">Curriculum</a><a class="btn btn-ghost" href="parts/">Parts catalogue</a></div>
+<div class="btn-row"><a class="btn btn-primary" href="projects/">Browse 35 projects</a><a class="btn btn-ghost" href="goals/">Projects by goal</a><a class="btn btn-ghost" href="curriculum/">Curriculum</a><a class="btn btn-ghost" href="parts/">Parts catalogue</a></div>
 </div></section>
 <section class="block"><div class="wrap narrow">
 <div class="callout warn"><h2>Draft, and unofficial</h2>
-<p>This is an early draft. It is <strong>not affiliated with, endorsed by or part of Fab Academy</strong> or the Fab Foundation, and it is not a Fab Academy curriculum. Project details, prices and GST rates can be wrong or out of date. Check them before you buy.</p></div>
+<p>This is an early draft. It is <strong>not affiliated with, endorsed by or part of Fab Academy</strong> or the Fab Foundation, and it is not a Fab Academy curriculum. It is not affiliated with the United Nations either. Project details, prices and GST rates can be wrong or out of date. Check them before you buy.</p></div>
 <h2>What is here</h2>
 <ul class="clean">
-<li><strong>Projects.</strong> 5 ideas from beginner to advanced, each with what it teaches, a build time, safety notes and a priced parts list.</li>
-<li><strong>Parts catalogue.</strong> 38 priced parts used by the projects, with the seller's price, a source link and the date it was read. Parts shared between projects are marked. There are also 26 draft parts whose prices have not been researched yet; they are listed separately and are in no project or total.</li>
+<li><strong>Projects.</strong> 35 ideas from beginner to advanced, each with what it teaches, a build time, safety notes and a parts list. Some parts are not priced yet; those projects show no total.</li>
+<li><strong>Goals.</strong> Every project is matched to one of the 17 UN Sustainable Development Goals, or to Misc when nothing fits honestly. <a href="goals/">Browse by goal</a>.</li>
+<li><strong>Parts catalogue.</strong> 36 priced parts, with the seller's price, a source link and the date it was read. Parts shared between projects are marked. There are also 87 draft parts whose prices have not been researched yet; they are listed separately.</li>
 <li><strong>Curriculum.</strong> An unofficial companion to the Fab Academy curriculum: what each module's official assignment asks for, and what bare-minimum and exceptional work could look like. <a href="curriculum/">Open the curriculum</a>.</li>
 <li><strong>Ask.</strong> An optional tutor that runs in your browser with your own OpenRouter account. <a href="ask/">About the tutor</a>.</li>
 <li><strong>Buying.</strong> There is no online checkout. <a href="parts/#how-to-buy">Email info@curiosta.com</a> to buy or import parts.</li>
@@ -45,47 +46,292 @@
 <ul class="clean">
 <li>Prices are what a seller listed, including GST, on the date shown next to each part. They are not a Curiosta quote.</li>
 <li>No listing states a GST rate. Every part is marked <span class="flag">GST unverified, typically 18%</span>. Confirm the rate on a seller invoice.</li>
-<li>Where we have not found a price, the page says <span class="flag na">price not available</span>. We do not guess.</li>
+<li>Where we have not found a price, the page says <span class="flag na">not priced yet</span>. We do not guess, and a project with any unpriced required part shows no total.</li>
 <li>Shipping is not included. Stock and prices change.</li>
 </ul>
 </div></section>
 <section class="block alt"><div class="wrap">
 <div class="section-head"><p class="eyebrow">Projects</p><h2>Start with one of these</h2></div>
 <div class="grid"><article class="card">
-<ul class="chips"><li class="chip beginner">beginner</li><li class="chip">4-6 hours</li></ul>
-<h3><a href="projects/esp32-climate-node/">ESP32 Climate Node with OLED and MQTT Dashboard</a></h3>
-<p class="grow">Read digital (DHT22) and I2C (BMP280) sensors, share one I2C bus with an OLED (addressing 0x76 / 0x3C), then publish readings over Wi-Fi via MQTT to a live web dashboard. Good first project for input devices + networking weeks.</p>
-<ul class="chips"><li class="chip topic">Input devices</li><li class="chip topic">Networking and communications</li><li class="chip topic">Embedded programming</li><li class="chip topic">+2 more</li></ul>
-<p class="price">₹811<small>required parts, GST-inclusive as listed on 24 Oct 2026; GST rate unverified. Shipping not included.</small></p>
-<a class="more" href="projects/esp32-climate-node/">See the parts list<span class="sr-only"> for ESP32 Climate Node with OLED and MQTT Dashboard</span> &rarr;</a>
+<p class="sdg-label"><a href="goals/1/">SDG 1 · No Poverty</a></p>
+<ul class="chips"><li class="chip intermediate">intermediate</li><li class="chip">6-8 hours</li></ul>
+<h3><a href="projects/micro-vendor-weigh-scale/">Weigh-and-Price Helper Scale for Home Micro-Businesses</a></h3>
+<p class="grow">Read a strain-gauge load cell through an HX711 24-bit ADC, calibrate with known weights, filter noisy readings, and build a tare / unit-price / batch-cost interface on an OLED. Design a laser-cut cantilever mount that keeps the load cell in bending only.</p>
+<ul class="chips"><li class="chip topic">Input devices</li><li class="chip topic">Computer-controlled cutting</li><li class="chip topic">Embedded programming</li><li class="chip topic">+1 more</li></ul>
+<p class="no-total">Some parts are not priced yet, so there's no total.</p>
+<a class="more" href="projects/micro-vendor-weigh-scale/">See the parts list<span class="sr-only"> for Weigh-and-Price Helper Scale for Home Micro-Businesses</span> &rarr;</a>
 </article><article class="card">
+<p class="sdg-label"><a href="goals/1/">SDG 1 · No Poverty</a></p>
+<ul class="chips"><li class="chip intermediate">intermediate</li><li class="chip">2-3 days (design, two sheets of milling, assembly)</li></ul>
+<h3><a href="projects/flat-pack-vendor-stall/">CNC-Milled Flat-Pack Street Vendor Stall</a></h3>
+<p class="grow">Design big: parametric press-fit and knock-down joints for 18 mm plywood, dog-bone fillets for router-cut inside corners, nesting parts on a full sheet, CAM with tabs and safe feeds, and co-designing dimensions with a real vendor.</p>
+<ul class="chips"><li class="chip topic">Computer-controlled machining</li><li class="chip topic">Computer-aided design</li><li class="chip topic">Mechanical design</li><li class="chip topic">+1 more</li></ul>
+<p class="no-total">Some parts are not priced yet, so there's no total.</p>
+<a class="more" href="projects/flat-pack-vendor-stall/">See the parts list<span class="sr-only"> for CNC-Milled Flat-Pack Street Vendor Stall</span> &rarr;</a>
+</article><article class="card">
+<p class="sdg-label"><a href="goals/2/">SDG 2 · Zero Hunger</a></p>
+<ul class="chips"><li class="chip intermediate">intermediate</li><li class="chip">8-10 hours</li></ul>
+<h3><a href="projects/kitchen-garden-drip-controller/">Soil-Moisture Drip Irrigation Controller (Milled MOSFET Board)</a></h3>
+<p class="grow">Calibrate a capacitive soil sensor (dry air vs. wet soil), design and mill a low-side MOSFET switch with gate resistor, pull-down and flyback diode, add hysteresis so the pump does not chatter, and log moisture over Wi-Fi with deep sleep between readings.</p>
+<ul class="chips"><li class="chip topic">Electronics design</li><li class="chip topic">Electronics production</li><li class="chip topic">Input devices</li><li class="chip topic">+3 more</li></ul>
+<p class="no-total">Some parts are not priced yet, so there's no total.</p>
+<a class="more" href="projects/kitchen-garden-drip-controller/">See the parts list<span class="sr-only"> for Soil-Moisture Drip Irrigation Controller (Milled MOSFET Board)</span> &rarr;</a>
+</article><article class="card">
+<p class="sdg-label"><a href="goals/2/">SDG 2 · Zero Hunger</a></p>
+<ul class="chips"><li class="chip intermediate">intermediate</li><li class="chip">10-12 hours</li></ul>
+<h3><a href="projects/solar-food-dryer-controller/">Solar Food Dryer with Fan and Temperature Control</a></h3>
+<p class="grow">Design a laser-cut plywood box dryer with a clear glazing and airflow path, measure air temperature and humidity at the trays, and run a solar-charged fan through a MOSFET with hysteresis to keep drying air within a safe band.</p>
+<ul class="chips"><li class="chip topic">Computer-controlled cutting</li><li class="chip topic">Input devices</li><li class="chip topic">Output devices</li><li class="chip topic">+2 more</li></ul>
+<p class="no-total">Some parts are not priced yet, so there's no total.</p>
+<a class="more" href="projects/solar-food-dryer-controller/">See the parts list<span class="sr-only"> for Solar Food Dryer with Fan and Temperature Control</span> &rarr;</a>
+</article><article class="card">
+<p class="sdg-label"><a href="goals/3/">SDG 3 · Good Health and Well-being</a></p>
+<ul class="chips"><li class="chip intermediate">intermediate</li><li class="chip">8-10 hours</li></ul>
+<h3><a href="projects/milled-xiao-rp2040-reaction-game/">Milled Reaction-Time Trainer Board (XIAO RP2040)</a></h3>
+<p class="grow">Full board loop: schematic and layout in KiCad (single-sided, jumper-friendly), mill on a desktop CNC/PCB mill, solder through-hole parts, then program a game with buttons, WS2812 LEDs, buzzer and OLED score display. Covers DRC, tool-path generation, and debugging a fresh board.</p>
+<ul class="chips"><li class="chip topic">Electronics design</li><li class="chip topic">Electronics production</li><li class="chip topic">Embedded programming</li><li class="chip topic">+2 more</li></ul>
+<p class="price">₹837<small>required parts, GST-inclusive as listed by the seller on 24 Oct 2026; GST rate unverified. Shipping not included.</small></p>
+<a class="more" href="projects/milled-xiao-rp2040-reaction-game/">See the parts list<span class="sr-only"> for Milled Reaction-Time Trainer Board (XIAO RP2040)</span> &rarr;</a>
+</article><article class="card">
+<p class="sdg-label"><a href="goals/3/">SDG 3 · Good Health and Well-being</a></p>
+<ul class="chips"><li class="chip beginner">beginner</li><li class="chip">3-5 hours</li></ul>
+<h3><a href="projects/classroom-co2-ventilation-monitor/">Classroom CO2 Ventilation Monitor (Traffic-Light Display)</a></h3>
+<p class="grow">Read a true photoacoustic CO2 sensor (SCD40) over I2C, understand why CO2 is a proxy for how much exhaled air is in a room, map readings to a traffic-light LED bar, and log a school day to see the effect of opening windows.</p>
+<ul class="chips"><li class="chip topic">Input devices</li><li class="chip topic">Output devices</li><li class="chip topic">Embedded programming</li><li class="chip topic">+1 more</li></ul>
+<p class="no-total">Some parts are not priced yet, so there's no total.</p>
+<a class="more" href="projects/classroom-co2-ventilation-monitor/">See the parts list<span class="sr-only"> for Classroom CO2 Ventilation Monitor (Traffic-Light Display)</span> &rarr;</a>
+</article><article class="card">
+<p class="sdg-label"><a href="goals/4/">SDG 4 · Quality Education</a></p>
+<ul class="chips"><li class="chip intermediate">intermediate</li><li class="chip">8-12 hours</li></ul>
+<h3><a href="projects/wifi-obstacle-rover/">Wi-Fi Classroom Coding Rover (Laser-Cut Chassis)</a></h3>
+<p class="grow">Design a parametric laser-cut chassis around N20 motors, drive them with a DRV8833 H-bridge using PWM, add an ultrasonic scan head, handle a 2S battery with a 5V buck converter, and add a Wi-Fi web UI for manual/auto modes. Adds a sequenced-command mode for teaching beginners; without wheel encoders, distances and turn angles are time-based estimates, which is itself a lesson in open-loop control.</p>
+<ul class="chips"><li class="chip topic">Mechanical design</li><li class="chip topic">Computer-controlled cutting</li><li class="chip topic">Output devices</li><li class="chip topic">+4 more</li></ul>
+<p class="price">₹1,848<small>required parts, GST-inclusive as listed by the seller on 24 Oct 2026; GST rate unverified. Shipping not included.</small></p>
+<a class="more" href="projects/wifi-obstacle-rover/">See the parts list<span class="sr-only"> for Wi-Fi Classroom Coding Rover (Laser-Cut Chassis)</span> &rarr;</a>
+</article><article class="card">
+<p class="sdg-label"><a href="goals/4/">SDG 4 · Quality Education</a></p>
+<ul class="chips"><li class="chip advanced">advanced</li><li class="chip">20-30 hours over 1-2 weeks (group project)</li></ul>
+<h3><a href="projects/classroom-pen-plotter/">Classroom Pen Plotter for Geometry and Art (Machine Design)</a></h3>
+<p class="grow">Design a 2-axis gantry with 8 mm rods, LM8UU bearings and GT2 belts, size steps per mm, drive two Nema 17 motors through bipolar drivers, add a servo pen lift, and stream G-code from a simple web or Python interface.</p>
+<ul class="chips"><li class="chip topic">Mechanical design</li><li class="chip topic">Machine design</li><li class="chip topic">Output devices</li><li class="chip topic">+3 more</li></ul>
+<p class="no-total">Some parts are not priced yet, so there's no total.</p>
+<a class="more" href="projects/classroom-pen-plotter/">See the parts list<span class="sr-only"> for Classroom Pen Plotter for Geometry and Art (Machine Design)</span> &rarr;</a>
+</article><article class="card">
+<p class="sdg-label"><a href="goals/5/">SDG 5 · Gender Equality</a></p>
+<ul class="chips"><li class="chip intermediate">intermediate</li><li class="chip">8-10 hours</li></ul>
+<h3><a href="projects/ble-sos-pendant/">BLE SOS Pendant with Loud Alarm (3D-Printed, XIAO ESP32-C3)</a></h3>
+<p class="grow">Design a small 3D-printed enclosure with a recessed button that is hard to press by accident, drive a loud buzzer through a MOSFET, use BLE notifications to tell a paired phone (Web Bluetooth page), and charge a LiPo through the XIAO&#x27;s battery pads while staying in low-power sleep.</p>
+<ul class="chips"><li class="chip topic">Computer-aided design</li><li class="chip topic">3D scanning and printing</li><li class="chip topic">Electronics design</li><li class="chip topic">+3 more</li></ul>
+<p class="no-total">Some parts are not priced yet, so there's no total.</p>
+<a class="more" href="projects/ble-sos-pendant/">See the parts list<span class="sr-only"> for BLE SOS Pendant with Loud Alarm (3D-Printed, XIAO ESP32-C3)</span> &rarr;</a>
+</article><article class="card">
+<p class="sdg-label"><a href="goals/5/">SDG 5 · Gender Equality</a></p>
+<ul class="chips"><li class="chip intermediate">intermediate</li><li class="chip">10-12 hours</li></ul>
+<h3><a href="projects/school-pad-dispenser/">Free Menstrual Pad Dispenser with Low-Stock Alert for Schools</a></h3>
+<p class="grow">Design a laser-cut gravity magazine with a servo-driven pusher, detect an empty magazine with an IR sensor, and send a low-stock message to staff over Wi-Fi so refills happen before it runs out. Co-design placement and use with students.</p>
+<ul class="chips"><li class="chip topic">Computer-controlled cutting</li><li class="chip topic">Mechanical design</li><li class="chip topic">Input devices</li><li class="chip topic">+2 more</li></ul>
+<p class="no-total">Some parts are not priced yet, so there's no total.</p>
+<a class="more" href="projects/school-pad-dispenser/">See the parts list<span class="sr-only"> for Free Menstrual Pad Dispenser with Low-Stock Alert for Schools</span> &rarr;</a>
+</article><article class="card">
+<p class="sdg-label"><a href="goals/6/">SDG 6 · Clean Water and Sanitation</a></p>
+<ul class="chips"><li class="chip beginner">beginner</li><li class="chip">4-6 hours</li></ul>
+<h3><a href="projects/drinking-water-tds-meter/">Drinking-Water TDS and Temperature Meter</a></h3>
+<p class="grow">Read an analog conductivity-based TDS probe, apply temperature compensation from a 1-Wire DS18B20, calibrate against a reference solution, and understand what TDS can and cannot tell you about water.</p>
+<ul class="chips"><li class="chip topic">Input devices</li><li class="chip topic">Embedded programming</li><li class="chip topic">3D scanning and printing (optional probe holder)</li></ul>
+<p class="no-total">Some parts are not priced yet, so there's no total.</p>
+<a class="more" href="projects/drinking-water-tds-meter/">See the parts list<span class="sr-only"> for Drinking-Water TDS and Temperature Meter</span> &rarr;</a>
+</article><article class="card">
+<p class="sdg-label"><a href="goals/6/">SDG 6 · Clean Water and Sanitation</a></p>
+<ul class="chips"><li class="chip intermediate">intermediate</li><li class="chip">10-14 hours</li></ul>
+<h3><a href="projects/rainwater-tank-level-lora/">Rainwater Tank Level Monitor over LoRa (865 MHz)</a></h3>
+<p class="grow">Measure water level with a sealed ultrasonic sensor from the tank lid, convert distance to litres from tank geometry, send compact LoRa packets to an indoor receiver, and run on a solar-charged cell with deep sleep.</p>
+<ul class="chips"><li class="chip topic">Input devices</li><li class="chip topic">Networking and communications</li><li class="chip topic">Embedded programming</li><li class="chip topic">+2 more</li></ul>
+<p class="no-total">Some parts are not priced yet, so there's no total.</p>
+<a class="more" href="projects/rainwater-tank-level-lora/">See the parts list<span class="sr-only"> for Rainwater Tank Level Monitor over LoRa (865 MHz)</span> &rarr;</a>
+</article><article class="card">
+<p class="sdg-label"><a href="goals/7/">SDG 7 · Affordable and Clean Energy</a></p>
+<ul class="chips"><li class="chip advanced">advanced</li><li class="chip">12-16 hours over 2-3 days (cure times)</li></ul>
+<h3><a href="projects/cast-epoxy-glow-lamp/">Solar Cast Epoxy Lantern (3D-Printed Master, Silicone Mould, 18650 + Solar)</a></h3>
+<p class="grow">Design a diffuser dome with a cavity for the electronics, print the master, make a two-part silicone mould (parting line, pour/vent design, release), cast in clear epoxy and finish it (sand to frost). Then power a WS2812 ring from XIAO ESP32-C3 off one 18650 cell charged by a small solar panel through a protected TP4056, boost to 5 V, sense battery and panel voltage, and switch on at dusk.</p>
+<ul class="chips"><li class="chip topic">3D scanning and printing</li><li class="chip topic">Molding and casting</li><li class="chip topic">Output devices</li><li class="chip topic">+3 more</li></ul>
+<p class="no-total">Some parts are not priced yet, so there's no total.</p>
+<a class="more" href="projects/cast-epoxy-glow-lamp/">See the parts list<span class="sr-only"> for Solar Cast Epoxy Lantern (3D-Printed Master, Silicone Mould, 18650 + Solar)</span> &rarr;</a>
+</article><article class="card">
+<p class="sdg-label"><a href="goals/7/">SDG 7 · Affordable and Clean Energy</a></p>
+<ul class="chips"><li class="chip intermediate">intermediate</li><li class="chip">10-14 hours</li></ul>
+<h3><a href="projects/printed-wind-turbine-logger/">3D-Printed Micro Wind Turbine with Power Logging</a></h3>
+<p class="grow">Design and print a 3-blade rotor (airfoil, pitch, balance), mount it on a DC motor used as a generator with a 608 bearing, and log voltage, current and power with an INA219 into a dummy load to plot a power curve.</p>
+<ul class="chips"><li class="chip topic">Computer-aided design</li><li class="chip topic">3D scanning and printing</li><li class="chip topic">Mechanical design</li><li class="chip topic">+2 more</li></ul>
+<p class="no-total">Some parts are not priced yet, so there's no total.</p>
+<a class="more" href="projects/printed-wind-turbine-logger/">See the parts list<span class="sr-only"> for 3D-Printed Micro Wind Turbine with Power Logging</span> &rarr;</a>
+</article><article class="card">
+<p class="sdg-label"><a href="goals/8/">SDG 8 · Decent Work and Economic Growth</a></p>
+<ul class="chips"><li class="chip intermediate">intermediate</li><li class="chip">6-8 hours</li></ul>
+<h3><a href="projects/fab-lab-rfid-induction-log/">RFID Machine-Induction Check-in for Fab Lab Tools</a></h3>
+<p class="grow">Read 13.56 MHz cards over SPI, keep an allow-list per machine, show a clear green/red status, log sessions to a spreadsheet or MQTT, and think through privacy (store card IDs, not names) and the limits of card UIDs as identity.</p>
+<ul class="chips"><li class="chip topic">Input devices</li><li class="chip topic">Output devices</li><li class="chip topic">Embedded programming</li><li class="chip topic">+2 more</li></ul>
+<p class="no-total">Some parts are not priced yet, so there's no total.</p>
+<a class="more" href="projects/fab-lab-rfid-induction-log/">See the parts list<span class="sr-only"> for RFID Machine-Induction Check-in for Fab Lab Tools</span> &rarr;</a>
+</article><article class="card">
+<p class="sdg-label"><a href="goals/8/">SDG 8 · Decent Work and Economic Growth</a></p>
+<ul class="chips"><li class="chip beginner">beginner</li><li class="chip">5-7 hours</li></ul>
+<h3><a href="projects/pick-to-light-kitting-station/">Pick-to-Light Kitting Station for Small Workshops</a></h3>
+<p class="grow">Laser-cut a modular bin rack, address WS2812 LEDs per bin, build a phone web page where you enter or pick a kit recipe, and confirm each pick with a button so the next bin lights up. Measure time and error rate with and without lights.</p>
+<ul class="chips"><li class="chip topic">Computer-controlled cutting</li><li class="chip topic">Output devices</li><li class="chip topic">Input devices</li><li class="chip topic">+2 more</li></ul>
+<p class="no-total">Some parts are not priced yet, so there's no total.</p>
+<a class="more" href="projects/pick-to-light-kitting-station/">See the parts list<span class="sr-only"> for Pick-to-Light Kitting Station for Small Workshops</span> &rarr;</a>
+</article><article class="card">
+<p class="sdg-label"><a href="goals/9/">SDG 9 · Industry, Innovation and Infrastructure</a></p>
+<ul class="chips"><li class="chip intermediate">intermediate</li><li class="chip">6-8 hours</li></ul>
+<h3><a href="projects/smart-truss-bridge/">Laser-Cut Truss Bridge with Tilt and Vibration Sensing</a></h3>
+<p class="grow">Design a parametric press-fit truss (kerf compensation, joint design), load-test it, and read an MPU-6050 to measure deflection angle and natural frequency (FFT of a tap test). Compare designs by stiffness per gram.</p>
+<ul class="chips"><li class="chip topic">Computer-aided design</li><li class="chip topic">Computer-controlled cutting</li><li class="chip topic">Input devices</li><li class="chip topic">+2 more</li></ul>
+<p class="no-total">Some parts are not priced yet, so there's no total.</p>
+<a class="more" href="projects/smart-truss-bridge/">See the parts list<span class="sr-only"> for Laser-Cut Truss Bridge with Tilt and Vibration Sensing</span> &rarr;</a>
+</article><article class="card">
+<p class="sdg-label"><a href="goals/9/">SDG 9 · Industry, Innovation and Infrastructure</a></p>
+<ul class="chips"><li class="chip intermediate">intermediate</li><li class="chip">8-10 hours</li></ul>
+<h3><a href="projects/machine-utilisation-retrofit/">Clip-On Machine Utilisation Logger (Industry 4.0 Retrofit)</a></h3>
+<p class="grow">Mill a small board for an accelerometer node, mount it with magnets on a machine body, classify running vs idle from vibration energy, and publish run-time and cycle counts over MQTT to a shift dashboard without touching the machine&#x27;s wiring.</p>
+<ul class="chips"><li class="chip topic">Electronics design</li><li class="chip topic">Electronics production</li><li class="chip topic">Input devices</li><li class="chip topic">+2 more</li></ul>
+<p class="no-total">Some parts are not priced yet, so there's no total.</p>
+<a class="more" href="projects/machine-utilisation-retrofit/">See the parts list<span class="sr-only"> for Clip-On Machine Utilisation Logger (Industry 4.0 Retrofit)</span> &rarr;</a>
+</article><article class="card">
+<p class="sdg-label"><a href="goals/10/">SDG 10 · Reduced Inequalities</a></p>
+<ul class="chips"><li class="chip intermediate">intermediate</li><li class="chip">8-10 hours</li></ul>
+<h3><a href="projects/haptic-distance-wristband/">Haptic Distance Wristband (ToF Sensor, Vibration Feedback)</a></h3>
+<p class="grow">Read a VL53L1X time-of-flight sensor over I2C, map distance to vibration intensity and rhythm with PWM through a MOSFET and flyback diode, design a wearable enclosure, and run user tests to tune the feedback.</p>
+<ul class="chips"><li class="chip topic">Electronics design</li><li class="chip topic">Electronics production</li><li class="chip topic">Input devices</li><li class="chip topic">+3 more</li></ul>
+<p class="no-total">Some parts are not priced yet, so there's no total.</p>
+<a class="more" href="projects/haptic-distance-wristband/">See the parts list<span class="sr-only"> for Haptic Distance Wristband (ToF Sensor, Vibration Feedback)</span> &rarr;</a>
+</article><article class="card">
+<p class="sdg-label"><a href="goals/10/">SDG 10 · Reduced Inequalities</a></p>
+<ul class="chips"><li class="chip beginner">beginner</li><li class="chip">6-8 hours (map) + 3-4 hours (optional audio)</li></ul>
+<h3><a href="projects/talking-tactile-campus-map/">Laser-Cut Tactile Campus Map with Braille and Touch Audio</a></h3>
+<p class="grow">Design a layered tactile map with clear raised edges and textures, engrave or build up braille labels to a published dimension standard, then add copper-tape touch points read by ESP32 capacitive pins that play short audio descriptions through an I2S amplifier.</p>
+<ul class="chips"><li class="chip topic">Computer-controlled cutting</li><li class="chip topic">Computer-aided design</li><li class="chip topic">Input devices (optional)</li><li class="chip topic">+1 more</li></ul>
+<p class="no-total">Some parts are not priced yet, so there's no total.</p>
+<a class="more" href="projects/talking-tactile-campus-map/">See the parts list<span class="sr-only"> for Laser-Cut Tactile Campus Map with Braille and Touch Audio</span> &rarr;</a>
+</article><article class="card">
+<p class="sdg-label"><a href="goals/11/">SDG 11 · Sustainable Cities and Communities</a></p>
+<ul class="chips"><li class="chip intermediate">intermediate</li><li class="chip">6-8 hours</li></ul>
+<h3><a href="projects/street-noise-meter/">Street Noise Level Meter (I2S Microphone, dB Logging)</a></h3>
+<p class="grow">Capture audio over I2S, compute RMS level in dBFS, apply an approximate A-weighting, calibrate the offset against a reference meter, and log time-stamped readings over Wi-Fi with an honest uncertainty note.</p>
+<ul class="chips"><li class="chip topic">Input devices</li><li class="chip topic">Output devices</li><li class="chip topic">Embedded programming</li><li class="chip topic">+2 more</li></ul>
+<p class="no-total">Some parts are not priced yet, so there's no total.</p>
+<a class="more" href="projects/street-noise-meter/">See the parts list<span class="sr-only"> for Street Noise Level Meter (I2S Microphone, dB Logging)</span> &rarr;</a>
+</article><article class="card">
+<p class="sdg-label"><a href="goals/11/">SDG 11 · Sustainable Cities and Communities</a></p>
+<ul class="chips"><li class="chip advanced">advanced</li><li class="chip">12-16 hours</li></ul>
+<h3><a href="projects/bike-road-quality-mapper/">Bike-Mounted Road Quality and Pothole Mapper</a></h3>
+<p class="grow">Fuse GPS fixes with accelerometer shock events, filter out kerbs and braking, log to microSD, then plot a road-roughness heat map in Python or a web map. Design a vibration-isolated, rain-resistant handlebar mount.</p>
+<ul class="chips"><li class="chip topic">Input devices</li><li class="chip topic">Embedded programming</li><li class="chip topic">3D scanning and printing</li><li class="chip topic">+2 more</li></ul>
+<p class="no-total">Some parts are not priced yet, so there's no total.</p>
+<a class="more" href="projects/bike-road-quality-mapper/">See the parts list<span class="sr-only"> for Bike-Mounted Road Quality and Pothole Mapper</span> &rarr;</a>
+</article><article class="card">
+<p class="sdg-label"><a href="goals/12/">SDG 12 · Responsible Consumption and Production</a></p>
+<ul class="chips"><li class="chip beginner">beginner</li><li class="chip">5-7 hours</li></ul>
+<h3><a href="projects/compost-health-probe/">Compost Health Probe (Temperature + Moisture, Low-Power)</a></h3>
+<p class="grow">Read a 1-Wire temperature probe and a capacitive moisture sensor, use deep sleep to run for weeks on a LiPo, report over Wi-Fi, and interpret the hot-composting temperature curve (warm-up, hot phase, cooling).</p>
+<ul class="chips"><li class="chip topic">Input devices</li><li class="chip topic">Embedded programming</li><li class="chip topic">Networking and communications</li><li class="chip topic">+1 more</li></ul>
+<p class="no-total">Some parts are not priced yet, so there's no total.</p>
+<a class="more" href="projects/compost-health-probe/">See the parts list<span class="sr-only"> for Compost Health Probe (Temperature + Moisture, Low-Power)</span> &rarr;</a>
+</article><article class="card">
+<p class="sdg-label"><a href="goals/12/">SDG 12 · Responsible Consumption and Production</a></p>
+<ul class="chips"><li class="chip advanced">advanced</li><li class="chip">20-25 hours</li></ul>
+<h3><a href="projects/pet-bottle-filament-pultruder/">PET-Bottle Strip Filament Pultruder</a></h3>
+<p class="grow">Build a bottle strip cutter, then a pultruder: a hotend with a widened nozzle shapes the strip into round filament while a stepper winds it onto a spool. Implement PID temperature control with thermal-runaway protection and match pull speed to temperature.</p>
+<ul class="chips"><li class="chip topic">Mechanical design</li><li class="chip topic">Machine design</li><li class="chip topic">Output devices</li><li class="chip topic">+3 more</li></ul>
+<p class="no-total">Some parts are not priced yet, so there's no total.</p>
+<a class="more" href="projects/pet-bottle-filament-pultruder/">See the parts list<span class="sr-only"> for PET-Bottle Strip Filament Pultruder</span> &rarr;</a>
+</article><article class="card">
+<p class="sdg-label"><a href="goals/13/">SDG 13 · Climate Action</a></p>
+<ul class="chips"><li class="chip beginner">beginner</li><li class="chip">4-6 hours</li></ul>
+<h3><a href="projects/esp32-climate-node/">ESP32 Climate Node: Heat-Index Monitor with OLED and MQTT Dashboard</a></h3>
+<p class="grow">Read digital (DHT22) and I2C (BMP280) sensors, share one I2C bus with an OLED (addressing 0x76 / 0x3C), then publish readings over Wi-Fi via MQTT to a live web dashboard. Good first project for input devices + networking weeks. Adds a heat-index calculation (from temperature and humidity) with threshold alerts and a long-running CSV log, so students see local heat trends rather than a single reading.</p>
+<ul class="chips"><li class="chip topic">Input devices</li><li class="chip topic">Networking and communications</li><li class="chip topic">Embedded programming</li><li class="chip topic">+2 more</li></ul>
+<p class="price">₹811<small>required parts, GST-inclusive as listed by the seller on 24 Oct 2026; GST rate unverified. Shipping not included.</small></p>
+<a class="more" href="projects/esp32-climate-node/">See the parts list<span class="sr-only"> for ESP32 Climate Node: Heat-Index Monitor with OLED and MQTT Dashboard</span> &rarr;</a>
+</article><article class="card">
+<p class="sdg-label"><a href="goals/13/">SDG 13 · Climate Action</a></p>
+<ul class="chips"><li class="chip beginner">beginner</li><li class="chip">4-6 hours + a sunny day of logging</li></ul>
+<h3><a href="projects/cool-roof-model-houses/">Cool-Roof Experiment: Twin Laser-Cut Model Houses</a></h3>
+<p class="grow">Design identical press-fit model houses, run a controlled experiment (only roof colour differs), log two 1-Wire temperature probes plus ambient, and plot the difference to draw an evidence-based conclusion.</p>
+<ul class="chips"><li class="chip topic">Computer-controlled cutting</li><li class="chip topic">Computer-aided design</li><li class="chip topic">Input devices</li><li class="chip topic">+2 more</li></ul>
+<p class="no-total">Some parts are not priced yet, so there's no total.</p>
+<a class="more" href="projects/cool-roof-model-houses/">See the parts list<span class="sr-only"> for Cool-Roof Experiment: Twin Laser-Cut Model Houses</span> &rarr;</a>
+</article><article class="card">
+<p class="sdg-label"><a href="goals/14/">SDG 14 · Life Below Water</a></p>
+<ul class="chips"><li class="chip advanced">advanced</li><li class="chip">14-18 hours over several days (print, seal, cure, test)</li></ul>
+<h3><a href="projects/lora-water-quality-buoy/">LoRa Water-Quality Buoy (Temperature + Turbidity)</a></h3>
+<p class="grow">Design a sealed, stable 3D-printed buoy (buoyancy and ballast maths, gland and gasket design, potting with epoxy), read temperature and turbidity, send packets over LoRa to a shore receiver, and budget power for multi-day deployment.</p>
+<ul class="chips"><li class="chip topic">Computer-aided design</li><li class="chip topic">3D scanning and printing</li><li class="chip topic">Molding and casting</li><li class="chip topic">+4 more</li></ul>
+<p class="no-total">Some parts are not priced yet, so there's no total.</p>
+<a class="more" href="projects/lora-water-quality-buoy/">See the parts list<span class="sr-only"> for LoRa Water-Quality Buoy (Temperature + Turbidity)</span> &rarr;</a>
+</article><article class="card">
+<p class="sdg-label"><a href="goals/14/">SDG 14 · Life Below Water</a></p>
+<ul class="chips"><li class="chip beginner">beginner</li><li class="chip">4-6 hours + field sampling</li></ul>
+<h3><a href="projects/shoreline-microplastics-sieve-kit/">Shoreline Microplastics Sieve Kit with Phone Microscope Stand</a></h3>
+<p class="grow">Design a nesting laser-cut sieve stack (5 mm and 1 mm stainless mesh), a sampling quadrat and a phone macro stand; use a saturated salt solution to float many common plastics out of sand, then count and photograph particles with a consistent method.</p>
+<ul class="chips"><li class="chip topic">Computer-controlled cutting</li><li class="chip topic">Computer-aided design</li><li class="chip topic">3D scanning and printing</li><li class="chip topic">+1 more</li></ul>
+<p class="no-total">Some parts are not priced yet, so there's no total.</p>
+<a class="more" href="projects/shoreline-microplastics-sieve-kit/">See the parts list<span class="sr-only"> for Shoreline Microplastics Sieve Kit with Phone Microscope Stand</span> &rarr;</a>
+</article><article class="card">
+<p class="sdg-label"><a href="goals/15/">SDG 15 · Life on Land</a></p>
+<ul class="chips"><li class="chip advanced">advanced</li><li class="chip">10-14 hours</li></ul>
+<h3><a href="projects/pir-wildlife-camera-trap/">PIR Wildlife Camera Trap (ESP32-CAM, 3D-Printed Housing)</a></h3>
+<p class="grow">Wake an ESP32-CAM from deep sleep on a PIR trigger, capture and save time-stamped JPEGs to microSD, budget power from one 18650, and design a weather-resistant printed housing with a clear window (optionally cast in epoxy).</p>
+<ul class="chips"><li class="chip topic">Computer-aided design</li><li class="chip topic">3D scanning and printing</li><li class="chip topic">Input devices</li><li class="chip topic">+3 more</li></ul>
+<p class="no-total">Some parts are not priced yet, so there's no total.</p>
+<a class="more" href="projects/pir-wildlife-camera-trap/">See the parts list<span class="sr-only"> for PIR Wildlife Camera Trap (ESP32-CAM, 3D-Printed Housing)</span> &rarr;</a>
+</article><article class="card">
+<p class="sdg-label"><a href="goals/15/">SDG 15 · Life on Land</a></p>
+<ul class="chips"><li class="chip advanced">advanced</li><li class="chip">14-18 hours</li></ul>
+<h3><a href="projects/acoustic-biodiversity-recorder/">Acoustic Biodiversity Recorder (Scheduled Dawn Chorus Logger)</a></h3>
+<p class="grow">Capture I2S audio and write WAV files to microSD on a schedule (dawn and dusk), budget power across days with deep sleep, design a weatherproof printed housing with an acoustic port, and analyse recordings with free tools such as spectrograms and BirdNET.</p>
+<ul class="chips"><li class="chip topic">Input devices</li><li class="chip topic">Embedded programming</li><li class="chip topic">Electronics production</li><li class="chip topic">+2 more</li></ul>
+<p class="no-total">Some parts are not priced yet, so there's no total.</p>
+<a class="more" href="projects/acoustic-biodiversity-recorder/">See the parts list<span class="sr-only"> for Acoustic Biodiversity Recorder (Scheduled Dawn Chorus Logger)</span> &rarr;</a>
+</article><article class="card">
+<p class="sdg-label"><a href="goals/16/">SDG 16 · Peace, Justice and Strong Institutions</a></p>
+<ul class="chips"><li class="chip intermediate">intermediate</li><li class="chip">8-10 hours</li></ul>
+<h3><a href="projects/tamper-evident-class-vote-box/">Tamper-Evident Electronic Vote Box for Clubs and Classrooms</a></h3>
+<p class="grow">Mill a board with choice buttons, a chair&#x27;s enable button and a lid switch; implement a one-vote-per-enable state machine, a hash-chained vote log in flash, and a tamper flag if the lid opens mid-session. Discuss what this does and does not prove.</p>
+<ul class="chips"><li class="chip topic">Electronics design</li><li class="chip topic">Electronics production</li><li class="chip topic">Computer-controlled cutting</li><li class="chip topic">+3 more</li></ul>
+<p class="no-total">Some parts are not priced yet, so there's no total.</p>
+<a class="more" href="projects/tamper-evident-class-vote-box/">See the parts list<span class="sr-only"> for Tamper-Evident Electronic Vote Box for Clubs and Classrooms</span> &rarr;</a>
+</article><article class="card">
+<p class="sdg-label"><a href="goals/16/">SDG 16 · Peace, Justice and Strong Institutions</a></p>
+<ul class="chips"><li class="chip advanced">advanced</li><li class="chip">16-20 hours over several days (milling, programming, casting)</li></ul>
+<h3><a href="projects/tamper-detecting-smart-seal/">Tamper-Detecting Smart Seal (ATtiny, Cast in Epoxy)</a></h3>
+<p class="grow">Design and mill an ATtiny board that watches a fine wire loop, sleeps at microamps on a coin cell, logs the first break (and a running count of wake-ups as a crude clock) to EEPROM, and blinks a status LED. Program over UPDI, then mould and cast the board in clear epoxy so the electronics cannot be reached without visible damage.</p>
+<ul class="chips"><li class="chip topic">Electronics design</li><li class="chip topic">Electronics production</li><li class="chip topic">Embedded programming</li><li class="chip topic">+2 more</li></ul>
+<p class="no-total">Some parts are not priced yet, so there's no total.</p>
+<a class="more" href="projects/tamper-detecting-smart-seal/">See the parts list<span class="sr-only"> for Tamper-Detecting Smart Seal (ATtiny, Cast in Epoxy)</span> &rarr;</a>
+</article><article class="card">
+<p class="sdg-label"><a href="goals/17/">SDG 17 · Partnerships for the Goals</a></p>
+<ul class="chips"><li class="chip beginner">beginner</li><li class="chip">3-5 hours</li></ul>
+<h3><a href="projects/sensor-community-pm-node/">Sensor.Community Air-Quality Node (Join a Global Open-Data Network)</a></h3>
+<p class="grow">Flash community firmware, wire a particulate sensor and an environment sensor to an existing open spec, register a node, and work to someone else&#x27;s standard so your data is comparable. Compare your readings with the nearest official monitoring station and document the build for others.</p>
+<ul class="chips"><li class="chip topic">Input devices</li><li class="chip topic">Networking and communications</li><li class="chip topic">Embedded programming</li><li class="chip topic">+1 more</li></ul>
+<p class="no-total">Some parts are not priced yet, so there's no total.</p>
+<a class="more" href="projects/sensor-community-pm-node/">See the parts list<span class="sr-only"> for Sensor.Community Air-Quality Node (Join a Global Open-Data Network)</span> &rarr;</a>
+</article><article class="card">
+<p class="sdg-label"><a href="goals/17/">SDG 17 · Partnerships for the Goals</a></p>
+<ul class="chips"><li class="chip intermediate">intermediate</li><li class="chip">10-12 hours + a joint test session</li></ul>
+<h3><a href="projects/twin-lab-lora-messenger/">Twin-Lab LoRa Messenger (Build to a Shared Open Spec)</a></h3>
+<p class="grow">Write a short interface spec with a partner team (frequency plan, spreading factor, packet format, checksum), implement it independently, then run interoperability tests and fix the spec, not just the code. Document so a third lab could join.</p>
+<ul class="chips"><li class="chip topic">Networking and communications</li><li class="chip topic">Embedded programming</li><li class="chip topic">Electronics production</li><li class="chip topic">+2 more</li></ul>
+<p class="no-total">Some parts are not priced yet, so there's no total.</p>
+<a class="more" href="projects/twin-lab-lora-messenger/">See the parts list<span class="sr-only"> for Twin-Lab LoRa Messenger (Build to a Shared Open Spec)</span> &rarr;</a>
+</article><article class="card">
+<p class="sdg-label"><a href="goals/misc/">Misc</a></p>
 <ul class="chips"><li class="chip beginner">beginner</li><li class="chip">4-6 hours</li></ul>
 <h3><a href="projects/ultrasonic-radar-scanner/">Ultrasonic Radar Scanner (RP2040 + Servo + OLED)</a></h3>
 <p class="grow">Timing-based distance sensing, driving a servo with PWM, level-shifting a 5V echo line to a 3.3V MCU with a resistor divider, and drawing a polar sweep on an OLED. Pairs a laser-cut pan bracket with MicroPython on RP2040.</p>
 <ul class="chips"><li class="chip topic">Input devices</li><li class="chip topic">Output devices</li><li class="chip topic">Embedded programming</li><li class="chip topic">+2 more</li></ul>
-<p class="price">₹987<small>required parts, GST-inclusive as listed on 24 Oct 2026; GST rate unverified. Shipping not included.</small></p>
+<p class="price">₹987<small>required parts, GST-inclusive as listed by the seller on 24 Oct 2026; GST rate unverified. Shipping not included.</small></p>
 <a class="more" href="projects/ultrasonic-radar-scanner/">See the parts list<span class="sr-only"> for Ultrasonic Radar Scanner (RP2040 + Servo + OLED)</span> &rarr;</a>
-</article><article class="card">
-<ul class="chips"><li class="chip intermediate">intermediate</li><li class="chip">8-12 hours</li></ul>
-<h3><a href="projects/wifi-obstacle-rover/">Wi-Fi Obstacle-Avoiding Mini Rover (Laser-Cut Chassis)</a></h3>
-<p class="grow">Design a parametric laser-cut chassis around N20 motors, drive them with a DRV8833 H-bridge using PWM, add an ultrasonic scan head, handle a 2S battery with a 5V buck converter, and add a Wi-Fi web UI for manual/auto modes.</p>
-<ul class="chips"><li class="chip topic">Mechanical design</li><li class="chip topic">Computer-controlled cutting</li><li class="chip topic">Output devices</li><li class="chip topic">+4 more</li></ul>
-<p class="price">₹1,848<small>required parts, GST-inclusive as listed on 24 Oct 2026; GST rate unverified. Shipping not included.</small></p>
-<a class="more" href="projects/wifi-obstacle-rover/">See the parts list<span class="sr-only"> for Wi-Fi Obstacle-Avoiding Mini Rover (Laser-Cut Chassis)</span> &rarr;</a>
-</article><article class="card">
-<ul class="chips"><li class="chip intermediate">intermediate</li><li class="chip">8-10 hours</li></ul>
-<h3><a href="projects/milled-xiao-rp2040-reaction-game/">Milled Pocket Reaction Game Board (XIAO RP2040)</a></h3>
-<p class="grow">Full board loop: schematic and layout in KiCad (single-sided, jumper-friendly), mill on a desktop CNC/PCB mill, solder through-hole parts, then program a game with buttons, WS2812 LEDs, buzzer and OLED score display. Covers DRC, tool-path generation, and debugging a fresh board.</p>
-<ul class="chips"><li class="chip topic">Electronics design</li><li class="chip topic">Electronics production</li><li class="chip topic">Embedded programming</li><li class="chip topic">+2 more</li></ul>
-<p class="price">₹837<small>required parts, GST-inclusive as listed on 24 Oct 2026; GST rate unverified. Shipping not included.</small></p>
-<a class="more" href="projects/milled-xiao-rp2040-reaction-game/">See the parts list<span class="sr-only"> for Milled Pocket Reaction Game Board (XIAO RP2040)</span> &rarr;</a>
-</article><article class="card">
-<ul class="chips"><li class="chip advanced">advanced</li><li class="chip">12-16 hours over 2-3 days (cure times)</li></ul>
-<h3><a href="projects/cast-epoxy-glow-lamp/">Cast Epoxy Glow Lamp (3D-Printed Master, Silicone Mould, Wi-Fi LEDs)</a></h3>
-<p class="grow">Design a diffuser dome with a cavity for the electronics, print the master, make a two-part silicone mould (parting line, pour/vent design, release), cast in clear epoxy, finish (sand to frost), then drive a WS2812 ring from XIAO ESP32-C3 with a Wi-Fi colour picker page.</p>
-<ul class="chips"><li class="chip topic">3D scanning and printing</li><li class="chip topic">Molding and casting</li><li class="chip topic">Output devices</li><li class="chip topic">+3 more</li></ul>
-<p class="price">₹3,569.35<small>required parts, GST-inclusive as listed on 24 Oct 2026; GST rate unverified. Shipping not included.</small></p>
-<a class="more" href="projects/cast-epoxy-glow-lamp/">See the parts list<span class="sr-only"> for Cast Epoxy Glow Lamp (3D-Printed Master, Silicone Mould, Wi-Fi LEDs)</span> &rarr;</a>
 </article></div>
 </div></section>
 </main>
@@ -95,7 +341,7 @@
 <p>Maker project ideas with pre-selected parts lists, plus an unofficial Fab Academy companion. First draft.</p>
 <p><strong>Unofficial.</strong> maker.curiosta.com is an independent companion for Fab Academy students. It is not affiliated with, endorsed by or part of Fab Academy or the Fab Foundation. The official course is at <a href="https://fabacademy.org/">fabacademy.org</a>, and it is the authority on requirements, deadlines and grading.</p></div>
 <div><h2>Explore</h2><ul>
-<li><a href="curriculum/">Curriculum</a></li><li><a href="projects/">Projects</a></li>
+<li><a href="curriculum/">Curriculum</a></li><li><a href="projects/">Projects</a></li><li><a href="goals/">Goals</a></li>
 <li><a href="parts/">Parts catalogue</a></li><li><a href="ask/">Ask</a></li></ul></div>
 <div><h2>Buy parts</h2><ul>
 <li><a href="parts/#how-to-buy">How to buy</a></li>

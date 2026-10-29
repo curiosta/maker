@@ -5,12 +5,12 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Module 5: Embedded programming | Fab Academy companion | Maker by Curiosta</title>
-<meta name="description" content="Module 5, Embedded programming: what the official Fab Academy assignment asks for and what bare-minimum versus exceptional work could look like. Unofficial companion.">
+<meta name="description" content="Module 5, Embedded programming: the official Fab Academy assignment and how it is assessed, a documentation checklist, bare-minimum versus exceptional work, pitfalls and open tools. Unofficial companion.">
 <link rel="canonical" href="https://maker.curiosta.com/curriculum/embedded-programming/">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Maker by Curiosta">
 <meta property="og:title" content="Module 5: Embedded programming | Fab Academy companion | Maker by Curiosta">
-<meta property="og:description" content="Module 5, Embedded programming: what the official Fab Academy assignment asks for and what bare-minimum versus exceptional work could look like. Unofficial companion.">
+<meta property="og:description" content="Module 5, Embedded programming: the official Fab Academy assignment and how it is assessed, a documentation checklist, bare-minimum versus exceptional work, pitfalls and open tools. Unofficial companion.">
 <meta property="og:url" content="https://maker.curiosta.com/curriculum/embedded-programming/">
 <meta name="twitter:card" content="summary">
 <meta name="theme-color" content="#041726">
@@ -22,7 +22,7 @@
 <a class="skip" href="#main">Skip to content</a>
 <header class="topbar site-header"><div class="wrap">
 <a class="brand" href="../../"><b>Maker</b><span>by Curiosta</span></a>
-<nav aria-label="Main"><ul class="nav"><li><a href="../../">Home</a></li><li><a aria-current="page" href="../../curriculum/">Curriculum</a></li><li><a href="../../projects/">Projects</a></li><li><a href="../../parts/">Parts</a></li><li><a href="../../ask/">Ask</a></li><li><a href="../../parts/#how-to-buy">How to buy</a></li></ul></nav>
+<nav aria-label="Main"><ul class="nav"><li><a href="../../">Home</a></li><li><a aria-current="page" href="../../curriculum/">Curriculum</a></li><li><a href="../../projects/">Projects</a></li><li><a href="../../goals/">Goals</a></li><li><a href="../../parts/">Parts</a></li><li><a href="../../ask/">Ask</a></li><li><a href="../../parts/#how-to-buy">How to buy</a></li></ul></nav>
 </div></header>
 <main id="main">
 
@@ -30,8 +30,9 @@
 <nav class="crumbs" aria-label="Breadcrumb"><ol><li><a href="../../">Home</a></li><li><a href="../">Curriculum</a></li><li><span aria-current="page">Module 5</span></li></ol></nav>
 <p class="eyebrow">Module 5 of 19</p>
 <h1>Module 5: Embedded programming</h1>
-<p class="lead">What the official assignment asks for, and what bare-minimum and exceptional work could look like.</p>
+<p class="lead">What the official assignment asks for and how it is assessed, a documentation checklist, bare-minimum and exceptional work, pitfalls, open tools, and projects that practise it.</p>
 <p class="meta">2026 cohort lecture: 11 Feb 2026. Check the current schedule for your cohort.</p>
+<nav class="toc" aria-label="On this page"><ul><li><a href="#official">Assignment</a></li><li><a href="#assessed">Assessment</a></li><li><a href="#checklist">Checklist</a></li><li><a href="#rubric">Bare-minimum vs exceptional</a></li><li><a href="#pitfalls">Pitfalls</a></li><li><a href="#tools">Tools</a></li><li><a href="#projects">Projects</a></li><li><a href="#sources">Sources</a></li></ul></nav>
 </div></section>
 <section class="mp-section" id="official"><div class="wrap narrow">
 <div class="callout" role="note"><strong class="label">Unofficial</strong><p>Paraphrased from the Fab Academy 2026 class page, retrieved 24 Oct 2026. The official page is the authority and may have changed: <a href="https://fabacademy.org/2026/classes/embedded_programming/index.html">read it on fabacademy.org</a>.</p></div>
@@ -41,6 +42,21 @@
 <div class="req"><h3>Group assignment</h3><ul><li>Demonstrate and compare the toolchains and development workflows for available embedded architectures.</li></ul></div>
 <div class="req"><h3>Individual assignment</h3><ul><li>Browse through the data sheet for a microcontroller.</li><li>Write and test a program for an embedded system using a microcontroller to interact (with input and/or output devices) and communicate (with wired or wireless connections).</li></ul></div>
 <div class="req"><h3>Extra credit (optional, as marked on the official page)</h3><ul><li>Assemble the system.</li><li>Try different languages and/or development environments.</li></ul></div>
+</div></section>
+<section class="mp-section" id="assessed"><div class="wrap narrow">
+<h2>How it is assessed</h2>
+
+<div class="callout info" role="note"><strong class="label">Paraphrased</strong><p>From the Fab Academy 2026 <a href="https://fabacademy.org/2026/nueval/embedded_programming/">assessment page on fabacademy.org</a>, retrieved 29 Oct 2026. Your local and global instructors decide what passes.</p></div>
+<h3>Learning outcomes</h3>
+<ul><li>Implement programming protocols.</li></ul>
+<h3>Clarified in the official FAQ</h3><ul><li>For the group work, comparing chips on paper is not enough: physically program at least two microcontroller families with different toolchains.</li><li>Starting from someone else's code is fine if you acknowledge it, change it, understand it and write your own.</li><li>Put code on your page as a downloadable file or a code block, not a screenshot.</li></ul>
+<p class="fine">All modules also follow the <a href="https://fabacademy.org/2026/nueval/general_essentials/">general essentials</a> (original files in your archive, compressed media, acknowledgements, AI prompts documented) and the <a href="https://fabacademy.org/2026/nueval/commercial_board_policy/">commercial board policy</a>. <a href="../#essentials">Summary of both</a>.</p>
+</div></section>
+<section class="mp-section" id="checklist"><div class="wrap narrow">
+<h2>Documentation checklist</h2>
+
+<p class="fine">The official "have you answered these questions?" list for this module, paraphrased. Tick each one off in your documentation.</p>
+<ul class="checklist"><li>Linked to the group assignment page.</li><li>Browsed and documented some information from a microcontroller datasheet.</li><li>Programmed a board to interact and communicate.</li><li>Described the programming process or processes you used.</li><li>Included your source code.</li><li>Included hero shots.</li></ul>
 </div></section>
 <section class="mp-section" id="rubric"><div class="wrap narrow">
 <h2>Bare-minimum vs exceptional</h2>
@@ -52,9 +68,24 @@
 </div>
 <div class="cta-row"><a class="btn btn-primary" href="../../ask/">Ask the tutor about this module</a><a class="btn btn-ghost" href="../#coming-back">Coming back after a break?</a></div>
 </div></section>
+<section class="mp-section" id="pitfalls"><div class="wrap narrow">
+<h2>Common pitfalls</h2>
+<p class="fine">The author's notes, partly drawn from the official FAQ. Not official grading.</p>
+<ul><li>Posting a screenshot of code instead of the code.</li><li>Showing interaction but no communication, or the reverse. The assignment asks for both.</li><li>Copying an example without credit or without changing it.</li><li>Not recording board, toolchain and library versions, so you cannot rebuild it later.</li></ul>
+</div></section>
+<section class="mp-section" id="tools"><div class="wrap narrow">
+<h2>Open tools and references</h2>
+<ul class="tool-list"><li><a href="https://www.arduino.cc/en/software">Arduino IDE</a><span>simple toolchain for many boards</span></li><li><a href="https://platformio.org/">PlatformIO</a><span>build system for many architectures</span></li><li><a href="https://micropython.org/">MicroPython</a><span>Python on microcontrollers</span></li><li><a href="https://www.raspberrypi.com/documentation/microcontrollers/">Raspberry Pi microcontroller documentation</a><span>RP2040 and Pico docs</span></li><li><a href="https://datasheets.raspberrypi.com/rp2040/rp2040-datasheet.pdf">RP2040 datasheet (PDF)</a><span>practise reading a datasheet</span></li><li><a href="https://docs.espressif.com/projects/esp-idf/en/stable/esp32/">ESP-IDF documentation</a><span>Espressif's official framework</span></li><li><a href="https://wokwi.com/">Wokwi</a><span>browser simulator for trying code before hardware</span></li></ul>
+<p class="fine">Open or free-to-use tools and references picked by the author; links checked on 29 Oct 2026. Your lab may use others, and that is fine.</p>
+</div></section>
+<section class="mp-section" id="projects"><div class="wrap narrow">
+<h2>Projects on this site that practise this module</h2>
+<p>28 project ideas on this site list this module among the skills it teaches.</p>
+<ul class="proj-list"><li><a class="pt" href="../../projects/micro-vendor-weigh-scale/">Weigh-and-Price Helper Scale for Home Micro-Businesses</a><span class="pm"><a href="../../goals/1/">SDG 1 · No Poverty</a> · intermediate</span></li><li><a class="pt" href="../../projects/kitchen-garden-drip-controller/">Soil-Moisture Drip Irrigation Controller (Milled MOSFET Board)</a><span class="pm"><a href="../../goals/2/">SDG 2 · Zero Hunger</a> · intermediate</span></li><li><a class="pt" href="../../projects/solar-food-dryer-controller/">Solar Food Dryer with Fan and Temperature Control</a><span class="pm"><a href="../../goals/2/">SDG 2 · Zero Hunger</a> · intermediate</span></li><li><a class="pt" href="../../projects/milled-xiao-rp2040-reaction-game/">Milled Reaction-Time Trainer Board (XIAO RP2040)</a><span class="pm"><a href="../../goals/3/">SDG 3 · Good Health and Well-being</a> · intermediate</span></li><li><a class="pt" href="../../projects/classroom-co2-ventilation-monitor/">Classroom CO2 Ventilation Monitor (Traffic-Light Display)</a><span class="pm"><a href="../../goals/3/">SDG 3 · Good Health and Well-being</a> · beginner</span></li><li><a class="pt" href="../../projects/wifi-obstacle-rover/">Wi-Fi Classroom Coding Rover (Laser-Cut Chassis)</a><span class="pm"><a href="../../goals/4/">SDG 4 · Quality Education</a> · intermediate</span></li><li><a class="pt" href="../../projects/classroom-pen-plotter/">Classroom Pen Plotter for Geometry and Art (Machine Design)</a><span class="pm"><a href="../../goals/4/">SDG 4 · Quality Education</a> · advanced</span></li><li><a class="pt" href="../../projects/drinking-water-tds-meter/">Drinking-Water TDS and Temperature Meter</a><span class="pm"><a href="../../goals/6/">SDG 6 · Clean Water and Sanitation</a> · beginner</span></li><li><a class="pt" href="../../projects/rainwater-tank-level-lora/">Rainwater Tank Level Monitor over LoRa (865 MHz)</a><span class="pm"><a href="../../goals/6/">SDG 6 · Clean Water and Sanitation</a> · intermediate</span></li><li><a class="pt" href="../../projects/cast-epoxy-glow-lamp/">Solar Cast Epoxy Lantern (3D-Printed Master, Silicone Mould, 18650 + Solar)</a><span class="pm"><a href="../../goals/7/">SDG 7 · Affordable and Clean Energy</a> · advanced</span></li><li><a class="pt" href="../../projects/printed-wind-turbine-logger/">3D-Printed Micro Wind Turbine with Power Logging</a><span class="pm"><a href="../../goals/7/">SDG 7 · Affordable and Clean Energy</a> · intermediate</span></li><li><a class="pt" href="../../projects/fab-lab-rfid-induction-log/">RFID Machine-Induction Check-in for Fab Lab Tools</a><span class="pm"><a href="../../goals/8/">SDG 8 · Decent Work and Economic Growth</a> · intermediate</span></li><li><a class="pt" href="../../projects/smart-truss-bridge/">Laser-Cut Truss Bridge with Tilt and Vibration Sensing</a><span class="pm"><a href="../../goals/9/">SDG 9 · Industry, Innovation and Infrastructure</a> · intermediate</span></li><li><a class="pt" href="../../projects/haptic-distance-wristband/">Haptic Distance Wristband (ToF Sensor, Vibration Feedback)</a><span class="pm"><a href="../../goals/10/">SDG 10 · Reduced Inequalities</a> · intermediate</span></li><li><a class="pt" href="../../projects/street-noise-meter/">Street Noise Level Meter (I2S Microphone, dB Logging)</a><span class="pm"><a href="../../goals/11/">SDG 11 · Sustainable Cities and Communities</a> · intermediate</span></li><li><a class="pt" href="../../projects/bike-road-quality-mapper/">Bike-Mounted Road Quality and Pothole Mapper</a><span class="pm"><a href="../../goals/11/">SDG 11 · Sustainable Cities and Communities</a> · advanced</span></li><li><a class="pt" href="../../projects/compost-health-probe/">Compost Health Probe (Temperature + Moisture, Low-Power)</a><span class="pm"><a href="../../goals/12/">SDG 12 · Responsible Consumption and Production</a> · beginner</span></li><li><a class="pt" href="../../projects/pet-bottle-filament-pultruder/">PET-Bottle Strip Filament Pultruder</a><span class="pm"><a href="../../goals/12/">SDG 12 · Responsible Consumption and Production</a> · advanced</span></li><li><a class="pt" href="../../projects/esp32-climate-node/">ESP32 Climate Node: Heat-Index Monitor with OLED and MQTT Dashboard</a><span class="pm"><a href="../../goals/13/">SDG 13 · Climate Action</a> · beginner</span></li><li><a class="pt" href="../../projects/cool-roof-model-houses/">Cool-Roof Experiment: Twin Laser-Cut Model Houses</a><span class="pm"><a href="../../goals/13/">SDG 13 · Climate Action</a> · beginner</span></li><li><a class="pt" href="../../projects/lora-water-quality-buoy/">LoRa Water-Quality Buoy (Temperature + Turbidity)</a><span class="pm"><a href="../../goals/14/">SDG 14 · Life Below Water</a> · advanced</span></li><li><a class="pt" href="../../projects/pir-wildlife-camera-trap/">PIR Wildlife Camera Trap (ESP32-CAM, 3D-Printed Housing)</a><span class="pm"><a href="../../goals/15/">SDG 15 · Life on Land</a> · advanced</span></li><li><a class="pt" href="../../projects/acoustic-biodiversity-recorder/">Acoustic Biodiversity Recorder (Scheduled Dawn Chorus Logger)</a><span class="pm"><a href="../../goals/15/">SDG 15 · Life on Land</a> · advanced</span></li><li><a class="pt" href="../../projects/tamper-evident-class-vote-box/">Tamper-Evident Electronic Vote Box for Clubs and Classrooms</a><span class="pm"><a href="../../goals/16/">SDG 16 · Peace, Justice and Strong Institutions</a> · intermediate</span></li><li><a class="pt" href="../../projects/tamper-detecting-smart-seal/">Tamper-Detecting Smart Seal (ATtiny, Cast in Epoxy)</a><span class="pm"><a href="../../goals/16/">SDG 16 · Peace, Justice and Strong Institutions</a> · advanced</span></li><li><a class="pt" href="../../projects/sensor-community-pm-node/">Sensor.Community Air-Quality Node (Join a Global Open-Data Network)</a><span class="pm"><a href="../../goals/17/">SDG 17 · Partnerships for the Goals</a> · beginner</span></li><li><a class="pt" href="../../projects/twin-lab-lora-messenger/">Twin-Lab LoRa Messenger (Build to a Shared Open Spec)</a><span class="pm"><a href="../../goals/17/">SDG 17 · Partnerships for the Goals</a> · intermediate</span></li><li><a class="pt" href="../../projects/ultrasonic-radar-scanner/">Ultrasonic Radar Scanner (RP2040 + Servo + OLED)</a><span class="pm"><a href="../../goals/misc/">Misc</a> · beginner</span></li></ul>
+</div></section>
 <section class="mp-section" id="sources"><div class="wrap narrow">
 <h2>Sources</h2>
-<ul class="src-list"><li><a href="https://fabacademy.org/2026/classes/embedded_programming/index.html">Fab Academy 2026: embedded programming</a></li><li><a href="https://fabacademy.org/2026/schedule.html">Fab Academy 2026 schedule</a></li></ul>
+<ul class="src-list"><li><a href="https://fabacademy.org/2026/classes/embedded_programming/index.html">Fab Academy 2026: embedded programming</a> (class page), retrieved 24 Oct 2026</li><li><a href="https://fabacademy.org/2026/nueval/embedded_programming/">Fab Academy 2026 assessment guide: embedded programming</a>, retrieved 29 Oct 2026</li><li><a href="https://fabacademy.org/2026/nueval/general_essentials/">Fab Academy 2026 assessment guide: general essentials</a>, retrieved 29 Oct 2026</li><li><a href="https://fabacademy.org/2026/schedule.html">Fab Academy 2026 schedule</a></li></ul>
 <nav class="prevnext" aria-label="Module navigation">
 <a href="../computer-controlled-cutting/" rel="prev"><span class="dir">Previous</span>Module 4: Computer-controlled cutting</a>
 <a class="next" href="../3d-scanning-printing/" rel="next"><span class="dir">Next</span>Module 6: 3D scanning and printing</a>
@@ -67,7 +98,7 @@
 <p>Maker project ideas with pre-selected parts lists, plus an unofficial Fab Academy companion. First draft.</p>
 <p><strong>Unofficial.</strong> maker.curiosta.com is an independent companion for Fab Academy students. It is not affiliated with, endorsed by or part of Fab Academy or the Fab Foundation. The official course is at <a href="https://fabacademy.org/">fabacademy.org</a>, and it is the authority on requirements, deadlines and grading.</p></div>
 <div><h2>Explore</h2><ul>
-<li><a href="../../curriculum/">Curriculum</a></li><li><a href="../../projects/">Projects</a></li>
+<li><a href="../../curriculum/">Curriculum</a></li><li><a href="../../projects/">Projects</a></li><li><a href="../../goals/">Goals</a></li>
 <li><a href="../../parts/">Parts catalogue</a></li><li><a href="../../ask/">Ask</a></li></ul></div>
 <div><h2>Buy parts</h2><ul>
 <li><a href="../../parts/#how-to-buy">How to buy</a></li>
